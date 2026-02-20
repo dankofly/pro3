@@ -311,6 +311,24 @@
       }
     ]
   },
+  "socialProof": {
+    "platforms": [
+      {
+        "platform": "google",
+        "rating": "5.0",
+        "reviewCount": "TODO",
+        "label": "TODO reviews on Google",
+        "url": "https://share.google/6fbv9dtNTP33owE9c"
+      },
+      {
+        "platform": "tripadvisor",
+        "rating": "5.0",
+        "reviewCount": "TODO",
+        "label": "TODO reviews on Tripadvisor",
+        "url": "https://www.tripadvisor.at/Attraction_Review-g230011-d8720066-Reviews-Gleitschirm_Tandemflug_com-Lienz_Tirol_Austrian_Alps.html"
+      }
+    ]
+  },
   "legal": {
     "impressumTitle": "Legal Notice",
     "privacyTitle": "Privacy Policy"

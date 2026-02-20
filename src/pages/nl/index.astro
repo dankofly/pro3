@@ -8,6 +8,7 @@ import SafetySection from '~/components/landing/SafetySection.astro';
 import FAQSection from '~/components/landing/FAQSection.astro';
 import LeadForm from '~/components/landing/LeadForm.astro';
 import PricingSection from '~/components/landing/PricingSection.astro';
+import SocialProofSection from '~/components/landing/SocialProofSection.astro';
 
 import { t } from '~/i18n/utils';
 import { buildMainSiteUrl } from '~/config/site';
@@ -28,6 +29,8 @@ const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
     ctaSecondaryUrl={ctaSecondaryUrl}
     trustLine={dict.hero.trustLine}
   />
+
+  <SocialProofSection platforms={dict.socialProof.platforms} />
 
   <HowItWorks
     sectionTitle={dict.howItWorks.sectionTitle}
