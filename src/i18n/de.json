@@ -16,12 +16,13 @@
     "requestAvailability": "Verfügbarkeit anfragen"
   },
   "hero": {
-    "title": "Tandemflug über den Lienzer Dolomiten",
-    "subtitle": "Dein Flug startet am Zettersfeld oder Hochstein – je nach Wind und Wetter. Gemeinsam mit einem erfahrenen Piloten gleitest du über das Drautal und die Bergwelt Osttirols.",
+    "title": "Gleitschirm-Tandemflug im Airpark Lienzer Dolomiten",
+    "tagline": "Tandem Paragleiten mit KOFLY – Flieg mit!",
+    "subtitle": "Starte mit uns am Zettersfeld oder Hochstein und genieße die Freiheit des Fliegens – erste Reihe fußfrei in der wunderschönen Bergwelt Osttirols.",
     "ctaPrimary": "Verfügbarkeit anfragen",
     "ctaSecondary": "Direkt zur Buchung",
     "ctaSecondaryNote": "auf gleitschirm-tandemflug.com",
-    "trustLine": "Staatlich geprüfte Tandempiloten · Fluggebiet Airpark Lienzer Dolomiten"
+    "trustLine": "Staatlich geprüfte Tandempiloten · KOFLY · Airpark Lienzer Dolomiten"
   },
   "howItWorks": {
     "sectionTitle": "So läuft dein Tandemflug ab",

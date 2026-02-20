@@ -16,12 +16,13 @@
     "requestAvailability": "Check availability"
   },
   "hero": {
-    "title": "Tandem Paragliding over the Lienz Dolomites",
-    "subtitle": "Your flight launches from Zettersfeld or Hochstein – depending on wind and weather. Together with an experienced pilot, you soar above the Drau Valley and the mountains of East Tyrol.",
+    "title": "Tandem Paragliding in the Airpark Lienzer Dolomiten",
+    "tagline": "Tandem Paragliding with KOFLY – Come fly with us!",
+    "subtitle": "Launch with us from Zettersfeld or Hochstein and enjoy the freedom of flight – front row, feet free, in the stunning mountains of East Tyrol.",
     "ctaPrimary": "Check availability",
     "ctaSecondary": "Go to booking",
     "ctaSecondaryNote": "on gleitschirm-tandemflug.com",
-    "trustLine": "Certified tandem pilots · Flying area Airpark Lienzer Dolomiten"
+    "trustLine": "Certified tandem pilots · KOFLY · Airpark Lienzer Dolomiten"
   },
   "howItWorks": {
     "sectionTitle": "How your tandem flight works",
