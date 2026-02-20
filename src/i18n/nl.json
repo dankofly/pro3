@@ -11,6 +11,7 @@
     "launchSites": "Startplaatsen",
     "regions": "Regio's",
     "faq": "FAQ",
+    "packages": "Pakketten",
     "contact": "Aanvraag",
     "bookNow": "Nu boeken",
     "requestAvailability": "Beschikbaarheid aanvragen"
@@ -250,6 +251,65 @@
     "de": "Deutsch",
     "en": "English",
     "nl": "Nederlands"
+  },
+  "pricing": {
+    "sectionTitle": "Onze vliegpakketten",
+    "sectionSubtitle": "Pakketten & prijzen",
+    "ctaLabel": "Beschikbaarheid aanvragen",
+    "whatsappLabel": "WhatsApp",
+    "voucherNote": "Alle pakketten ook beschikbaar als <strong>cadeaubon</strong> (afhalen of per post) · <a href='#anfrage' class='text-sky-600 hover:underline'>Cadeaubon bestellen</a>",
+    "voucherLink": "#anfrage",
+    "packages": [
+      {
+        "category": "Standaard tandemvlucht",
+        "name": "Classic vluchtpakket",
+        "price": "€150",
+        "features": [
+          "Tandemvlucht ~20–30 min.",
+          "Startplaats naar keuze in Airpark Lienzer Dolomiten",
+          "Foto/video optioneel",
+          "Extra: alle aan- of oprijtkosten"
+        ],
+        "highlighted": false
+      },
+      {
+        "category": "Standaard tandemvlucht",
+        "name": "Classic vluchtpakket incl. mediapakket",
+        "price": "€170",
+        "features": [
+          "Tandemvlucht ~20–30 min.",
+          "Startplaats naar keuze in Airpark Lienzer Dolomiten",
+          "Incl. foto/HD-video + 4GB SD-kaart",
+          "Extra: alle aan- of oprijtkosten"
+        ],
+        "highlighted": false
+      },
+      {
+        "category": "All-inclusive tandemvlucht",
+        "name": "Premium vluchtpakket",
+        "price": "€190",
+        "features": [
+          "Tandemvlucht met extra tijd & beleving",
+          "Startplaats naar keuze in Airpark Lienzer Dolomiten",
+          "Incl. foto/HD-video + 4GB SD-kaart",
+          "Extra: alle aan- of oprijtkosten"
+        ],
+        "highlighted": true
+      },
+      {
+        "category": "Thermiek tandemvlucht",
+        "name": "XXL vluchtpakket",
+        "price": "€250",
+        "pricePrefix": "vanaf",
+        "features": [
+          "Thermiek- & afstandsvluchten, vliegtijd 1u+",
+          "Startplaats naar keuze in Airpark Lienzer Dolomiten",
+          "Incl. foto/HD-video + 4GB SD-kaart",
+          "Extra: alle aan- of oprijtkosten"
+        ],
+        "highlighted": false
+      }
+    ]
   },
   "legal": {
     "impressumTitle": "Colofon",

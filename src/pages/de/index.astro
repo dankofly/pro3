@@ -7,6 +7,7 @@ import RegionModules from '~/components/landing/RegionModules.astro';
 import SafetySection from '~/components/landing/SafetySection.astro';
 import FAQSection from '~/components/landing/FAQSection.astro';
 import LeadForm from '~/components/landing/LeadForm.astro';
+import PricingSection from '~/components/landing/PricingSection.astro';
 
 import { t } from '~/i18n/utils';
 import { buildMainSiteUrl } from '~/config/site';
@@ -38,6 +39,16 @@ const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
     intro={dict.launchSites.intro}
     sites={dict.launchSites.sites}
     weatherNote={dict.launchSites.weatherNote}
+  />
+
+  <PricingSection
+    sectionTitle={dict.pricing.sectionTitle}
+    sectionSubtitle={dict.pricing.sectionSubtitle}
+    packages={dict.pricing.packages}
+    ctaLabel={dict.pricing.ctaLabel}
+    whatsappLabel={dict.pricing.whatsappLabel}
+    voucherNote={dict.pricing.voucherNote}
+    voucherLink={dict.pricing.voucherLink}
   />
 
   <RegionModules

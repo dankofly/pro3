@@ -11,6 +11,7 @@
     "launchSites": "Launch sites",
     "regions": "Regions",
     "faq": "FAQ",
+    "packages": "Packages",
     "contact": "Enquiry",
     "bookNow": "Book now",
     "requestAvailability": "Check availability"
@@ -250,6 +251,65 @@
     "de": "Deutsch",
     "en": "English",
     "nl": "Nederlands"
+  },
+  "pricing": {
+    "sectionTitle": "Our flight packages",
+    "sectionSubtitle": "Packages & prices",
+    "ctaLabel": "Check availability",
+    "whatsappLabel": "WhatsApp",
+    "voucherNote": "All packages also available as <strong>voucher</strong> (pick-up or postal delivery) · <a href='#anfrage' class='text-sky-600 hover:underline'>Order voucher</a>",
+    "voucherLink": "#anfrage",
+    "packages": [
+      {
+        "category": "Standard tandem flight",
+        "name": "Classic flight package",
+        "price": "€150",
+        "features": [
+          "Tandem flight ~20–30 min.",
+          "Launch site of your choice in Airpark Lienzer Dolomiten",
+          "Photo/video optional",
+          "Extra: all transfer/transport costs"
+        ],
+        "highlighted": false
+      },
+      {
+        "category": "Standard tandem flight",
+        "name": "Classic flight package incl. media",
+        "price": "€170",
+        "features": [
+          "Tandem flight ~20–30 min.",
+          "Launch site of your choice in Airpark Lienzer Dolomiten",
+          "Incl. photo/HD video + 4GB SD card",
+          "Extra: all transfer/transport costs"
+        ],
+        "highlighted": false
+      },
+      {
+        "category": "All-inclusive tandem flight",
+        "name": "Premium flight package",
+        "price": "€190",
+        "features": [
+          "Tandem flight with extra time & experience",
+          "Launch site of your choice in Airpark Lienzer Dolomiten",
+          "Incl. photo/HD video + 4GB SD card",
+          "Extra: all transfer/transport costs"
+        ],
+        "highlighted": true
+      },
+      {
+        "category": "Thermal tandem flight",
+        "name": "XXL flight package",
+        "price": "€250",
+        "pricePrefix": "from",
+        "features": [
+          "Thermal & cross-country flights, 1h+ flight time",
+          "Launch site of your choice in Airpark Lienzer Dolomiten",
+          "Incl. photo/HD video + 4GB SD card",
+          "Extra: all transfer/transport costs"
+        ],
+        "highlighted": false
+      }
+    ]
   },
   "legal": {
     "impressumTitle": "Legal Notice",

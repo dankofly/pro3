@@ -11,6 +11,7 @@
     "launchSites": "Startplätze",
     "regions": "Regionen",
     "faq": "FAQ",
+    "packages": "Pakete",
     "contact": "Anfrage",
     "bookNow": "Jetzt buchen",
     "requestAvailability": "Verfügbarkeit anfragen"
@@ -250,6 +251,65 @@
     "de": "Deutsch",
     "en": "English",
     "nl": "Nederlands"
+  },
+  "pricing": {
+    "sectionTitle": "Unsere Flugpakete",
+    "sectionSubtitle": "Pakete & Preise",
+    "ctaLabel": "Verfügbarkeit anfragen",
+    "whatsappLabel": "WhatsApp",
+    "voucherNote": "Alle Pakete auch als <strong>Gutschein</strong> verfügbar (Abholung oder Postversand) · <a href='#anfrage' class='text-sky-600 hover:underline'>Gutschein bestellen</a>",
+    "voucherLink": "#anfrage",
+    "packages": [
+      {
+        "category": "Standard Tandemflug",
+        "name": "Classic Flugpaket",
+        "price": "€150",
+        "features": [
+          "Tandemflug ~20–30 Min.",
+          "Startplatz je nach Wahl im Airpark Lienzer Dolomiten",
+          "Foto/Video optional",
+          "Extra: alle An- oder Auffahrtskosten"
+        ],
+        "highlighted": false
+      },
+      {
+        "category": "Standard Tandemflug",
+        "name": "Classic Flugpaket inkl. Media Paket",
+        "price": "€170",
+        "features": [
+          "Tandemflug ~20–30 Min.",
+          "Startplatz je nach Wahl im Airpark Lienzer Dolomiten",
+          "Inkl. Foto/HD-Video + 4GB SD-Karte",
+          "Extra: alle An- oder Auffahrtskosten"
+        ],
+        "highlighted": false
+      },
+      {
+        "category": "All Inkl. Tandemflug",
+        "name": "Premium Flugpaket",
+        "price": "€190",
+        "features": [
+          "Tandemflug mit extra Zeit & Erlebnis",
+          "Startplatz je nach Wahl im Airpark Lienzer Dolomiten",
+          "Inkl. Foto/HD-Video + 4GB SD-Karte",
+          "Extra: alle An- oder Auffahrtskosten"
+        ],
+        "highlighted": true
+      },
+      {
+        "category": "Thermik Tandemflug",
+        "name": "XXL Flugpaket",
+        "price": "€250",
+        "pricePrefix": "ab",
+        "features": [
+          "Thermik- & Streckenflüge, Flugzeit 1h+",
+          "Startplatz je nach Wahl im Airpark Lienzer Dolomiten",
+          "Inkl. Foto/HD-Video + 4GB SD-Karte",
+          "Extra: alle An- oder Auffahrtskosten"
+        ],
+        "highlighted": false
+      }
+    ]
   },
   "legal": {
     "impressumTitle": "Impressum",

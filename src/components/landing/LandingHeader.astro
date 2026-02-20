@@ -9,6 +9,7 @@ export interface Props {
     home: string;
     howItWorks: string;
     launchSites: string;
+    packages: string;
     regions: string;
     faq: string;
     contact: string;
@@ -31,6 +32,7 @@ const { locale, currentPath, nav } = Astro.props;
       <nav class="hidden lg:flex items-center gap-5 text-sm">
         <a href="#ablauf" class="text-gray-600 hover:text-sky-700 transition-colors">{nav.howItWorks}</a>
         <a href="#startplaetze" class="text-gray-600 hover:text-sky-700 transition-colors">{nav.launchSites}</a>
+        <a href="#pakete" class="text-gray-600 hover:text-sky-700 transition-colors">{nav.packages}</a>
         <a href="#regionen" class="text-gray-600 hover:text-sky-700 transition-colors">{nav.regions}</a>
         <a href="#faq" class="text-gray-600 hover:text-sky-700 transition-colors">{nav.faq}</a>
       </nav>
@@ -63,6 +65,7 @@ const { locale, currentPath, nav } = Astro.props;
       <div class="flex flex-col gap-3 text-sm">
         <a href="#ablauf" class="text-gray-600 hover:text-sky-700 py-1">{nav.howItWorks}</a>
         <a href="#startplaetze" class="text-gray-600 hover:text-sky-700 py-1">{nav.launchSites}</a>
+        <a href="#pakete" class="text-gray-600 hover:text-sky-700 py-1">{nav.packages}</a>
         <a href="#regionen" class="text-gray-600 hover:text-sky-700 py-1">{nav.regions}</a>
         <a href="#faq" class="text-gray-600 hover:text-sky-700 py-1">{nav.faq}</a>
         <a
