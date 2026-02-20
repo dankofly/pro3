@@ -1,0 +1,51 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { locales, getOgLocale } from '~/i18n/utils';
+
+export interface Props {
+  locale: Locale;
+  currentPath: string;
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  siteUrl?: string;
+}
+
+const {
+  locale,
+  currentPath,
+  title,
+  description,
+  ogTitle,
+  ogDescription,
+  siteUrl = 'https://tandemflug-lienz.com',
+} = Astro.props;
+
+const cleanPath = currentPath.replace(/^\/(de|en|nl)/, '');
+const canonicalUrl = `${siteUrl}/${locale}${cleanPath || '/'}`;
+const ogLocale = getOgLocale(locale);
+
+const alternateLinks = locales.map((loc) => ({
+  locale: loc,
+  href: `${siteUrl}/${loc}${cleanPath || '/'}`,
+}));
+---
+
+<link rel="canonical" href={canonicalUrl} />
+
+{alternateLinks.map((link) => (
+  <link rel="alternate" hreflang={link.locale} href={link.href} />
+))}
+<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+
+<meta property="og:title" content={ogTitle || title} />
+<meta property="og:description" content={ogDescription || description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content={ogLocale} />
+<meta property="og:site_name" content="Tandemflug Lienz" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={ogTitle || title} />
+<meta name="twitter:description" content={ogDescription || description} />

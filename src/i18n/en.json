@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "Tandem Paragliding Lienz – Fly over the Lienz Dolomites",
+    "description": "Tandem paragliding in East Tyrol: Launch from Zettersfeld or Hochstein and soar above the Drau Valley. Check availability now.",
+    "ogTitle": "Tandem Paragliding Lienz – East Tyrol",
+    "ogDescription": "Tandem paragliding over the Lienz Dolomites. Launch sites Zettersfeld/Steinermandl and Hochstein. Enquire now."
+  },
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How it works",
+    "launchSites": "Launch sites",
+    "regions": "Regions",
+    "faq": "FAQ",
+    "contact": "Enquiry",
+    "bookNow": "Book now",
+    "requestAvailability": "Check availability"
+  },
+  "hero": {
+    "title": "Tandem Paragliding over the Lienz Dolomites",
+    "subtitle": "Your flight launches from Zettersfeld or Hochstein – depending on wind and weather. Together with an experienced pilot, you soar above the Drau Valley and the mountains of East Tyrol.",
+    "ctaPrimary": "Check availability",
+    "ctaSecondary": "Go to booking",
+    "ctaSecondaryNote": "on gleitschirm-tandemflug.com",
+    "trustLine": "Certified tandem pilots · Flying area Airpark Lienzer Dolomiten"
+  },
+  "howItWorks": {
+    "sectionTitle": "How your tandem flight works",
+    "steps": [
+      {
+        "title": "Send your request",
+        "description": "Tell us when you'll be here and how many want to fly. Via the form or WhatsApp."
+      },
+      {
+        "title": "Confirm meeting point",
+        "description": "We'll get back to you and set the meeting point. It depends on weather and launch site."
+      },
+      {
+        "title": "Ride up & briefing",
+        "description": "We head to the launch site together. Quick briefing – then we take off."
+      },
+      {
+        "title": "Fly",
+        "description": "~20–30 minutes above the Drau Valley. Lienz Dolomites below, views towards the Hohe Tauern."
+      },
+      {
+        "title": "Landing & photos",
+        "description": "Smooth landing in the valley. Photos and videos from your flight available right after."
+      }
+    ]
+  },
+  "launchSites": {
+    "sectionTitle": "Launch sites & views",
+    "intro": "In the Airpark Lienzer Dolomiten we fly from two launch sites. Which one we use depends on the weather – so you always get the best conditions.",
+    "sites": [
+      {
+        "name": "Zettersfeld / Steinermandl",
+        "description": "Spacious launch site above Lienz. Panoramic views of the Lienz Dolomites and the Drau Valley."
+      },
+      {
+        "name": "Hochstein",
+        "description": "Launch site at Hochstein with views over Lienz and the surrounding mountains."
+      }
+    ],
+    "weatherNote": "The meeting point is arranged based on weather and launch site – usually near the valley station or at the landing zones."
+  },
+  "regions": {
+    "sectionTitle": "Tandem flight – wherever you're staying in the region",
+    "sectionSubtitle": "Our launch sites in Lienz are easily reachable from across the region.",
+    "items": [
+      {
+        "id": "lienz",
+        "name": "Lienz & East Tyrol",
+        "content": "Staying in or near Lienz? The tandem flight is just a short ride away. Our launch sites Zettersfeld and Hochstein are right above town. A perfect highlight for a day out – or a spontaneous plan when the weather cooperates."
+      },
+      {
+        "id": "oberkaernten",
+        "name": "Upper Carinthia",
+        "content": "Lienz is easily reachable from Upper Carinthia. A tandem flight makes a great day trip – arrive in the morning, fly around midday, then explore the old town of Lienz or relax at Tristacher See in the afternoon."
+      },
+      {
+        "id": "drautal",
+        "name": "Drau Valley",
+        "content": "Along the Drau Valley between Spittal and Lienz, our meeting point is practically on the way. If you're holidaying in the Drau Valley, you'll reach us without any detours."
+      },
+      {
+        "id": "moelltal",
+        "name": "Möll Valley",
+        "content": "From the Möll Valley, Lienz is a straightforward drive. Combine a day near the Großglockner with a tandem flight over the Lienz Dolomites – two perspectives on the same mountains."
+      },
+      {
+        "id": "iseltal",
+        "name": "Isel Valley & Matrei",
+        "content": "From Matrei in East Tyrol it's a short drive to Lienz. A tandem flight is a welcome change from the hiking programme and shows you the valley from a completely different angle."
+      },
+      {
+        "id": "kals",
+        "name": "Kals am Großglockner",
+        "content": "In Kals, everything revolves around the Großglockner. You can see it from above too – on a tandem flight from Lienz. The drive is manageable, and the flight fits nicely into a day of hiking or a mountain excursion."
+      },
+      {
+        "id": "defereggental",
+        "name": "St. Jakob in Defereggental",
+        "content": "The Defereggen Valley is quiet and unspoilt. Looking for a change of pace? A tandem flight from Lienz is the perfect contrast to your daily hikes – and an experience you'll remember."
+      },
+      {
+        "id": "pustertal",
+        "name": "Puster Valley – Sillian & Obertilliach",
+        "content": "From the Puster Valley, Lienz is the nearest larger town. Tandem paragliding is an outdoor activity that's not easily available elsewhere here – and the views over the Dolomites are worth it."
+      }
+    ]
+  },
+  "safety": {
+    "sectionTitle": "Weather, safety & what to bring",
+    "weather": {
+      "title": "Weather & safety",
+      "content": "Whether we fly is the pilot's call, based on current weather conditions. Safety always comes first. If conditions aren't right, we reschedule – no stress."
+    },
+    "planning": {
+      "title": "Planning around the weather",
+      "content": "Mountain weather changes fast. That's why we arrange flight times at short notice and stay flexible. Best to contact us a few days before your preferred date – so we can find the ideal window together."
+    },
+    "packingList": {
+      "title": "What to bring",
+      "items": [
+        "Sturdy shoes (hiking boots ideal, no sandals)",
+        "Long trousers",
+        "Jacket or fleece – it can be noticeably cooler up high",
+        "Sunglasses and sun protection",
+        "No bulky backpacks needed"
+      ]
+    },
+    "suitability": {
+      "title": "Who can fly?",
+      "content": "Tandem flights are suitable for almost everyone – no experience needed. Children can fly too, as long as they can understand and follow the pilot's instructions. If you have any health concerns, just check with us beforehand."
+    }
+  },
+  "faq": {
+    "sectionTitle": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How long does the flight last?",
+        "answer": "Usually ~20–30 minutes. The exact duration depends on thermal conditions and weather."
+      },
+      {
+        "question": "Do I need any experience?",
+        "answer": "No. You fly with a certified tandem pilot who handles all the controls. You just need to take a few running steps at launch."
+      },
+      {
+        "question": "What should I wear?",
+        "answer": "Sturdy shoes (hiking boots ideal), long trousers, jacket. It can be noticeably cooler up high than in the valley."
+      },
+      {
+        "question": "Can children fly?",
+        "answer": "Generally yes. They need to be able to understand and follow the pilot's instructions."
+      },
+      {
+        "question": "What if the weather is bad?",
+        "answer": "Safety comes first. If conditions aren't right, we reschedule. That's why we contact you beforehand to find the best time."
+      },
+      {
+        "question": "Where do we meet?",
+        "answer": "We arrange the exact meeting point based on weather and launch site. We usually meet near the valley station or at the landing zones."
+      },
+      {
+        "question": "Are photos and videos available?",
+        "answer": "Yes, photo and video recordings of your flight are possible. We'll discuss details when you book."
+      },
+      {
+        "question": "How safe is tandem paragliding?",
+        "answer": "Tandem flights are only conducted by certified pilots with certified equipment. Whether we fly always depends on current weather conditions."
+      },
+      {
+        "question": "Can I fly if I'm afraid of heights?",
+        "answer": "Many passengers initially have some respect for heights. Most report that flying feels different from standing on a mountain – more like floating."
+      }
+    ]
+  },
+  "form": {
+    "sectionTitle": "Check availability",
+    "sectionSubtitle": "Send us your preferred dates – we'll get back to you with a suggestion.",
+    "fields": {
+      "region": {
+        "label": "Where are you staying?",
+        "placeholder": "Select region",
+        "options": {
+          "lienz": "Lienz / East Tyrol",
+          "oberkaernten": "Upper Carinthia",
+          "drautal": "Drau Valley",
+          "moelltal": "Möll Valley",
+          "iseltal": "Isel Valley / Matrei",
+          "kals": "Kals am Großglockner",
+          "defereggental": "Defereggental",
+          "pustertal": "Puster Valley (Sillian, Obertilliach)",
+          "other": "Other region"
+        }
+      },
+      "date": {
+        "label": "Preferred date",
+        "placeholder": "e.g. 15 July or 'next Tuesday'"
+      },
+      "persons": {
+        "label": "Number of people",
+        "placeholder": "How many want to fly?"
+      },
+      "phone": {
+        "label": "Phone / WhatsApp",
+        "placeholder": "So we can arrange the details"
+      },
+      "email": {
+        "label": "Email (optional)",
+        "placeholder": "Your email address"
+      },
+      "message": {
+        "label": "Message (optional)",
+        "placeholder": "Special requests, questions, etc."
+      },
+      "submit": "Send enquiry",
+      "privacy": "By submitting you agree to the processing of your data in accordance with our {link}.",
+      "privacyLink": "privacy policy"
+    }
+  },
+  "thankYou": {
+    "title": "Thank you for your enquiry!",
+    "message": "We've received your details and will be in touch shortly – by phone, WhatsApp or email.",
+    "nextSteps": "What happens next:",
+    "steps": [
+      "We check the weather for your preferred date.",
+      "You receive a suggested time and meeting point.",
+      "On the day, we meet up and take off together."
+    ],
+    "ctaMain": "Go to booking on gleitschirm-tandemflug.com",
+    "ctaBack": "Back to homepage"
+  },
+  "footer": {
+    "tagline": "Tandem Paragliding Lienz – Airpark Lienzer Dolomiten",
+    "nav": {
+      "imprint": "Legal notice",
+      "privacy": "Privacy policy",
+      "mainSite": "gleitschirm-tandemflug.com"
+    },
+    "copyright": "© {year} tandemflug-lienz.com"
+  },
+  "stickyBar": {
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "request": "Enquiry"
+  },
+  "langSwitch": {
+    "de": "Deutsch",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "legal": {
+    "impressumTitle": "Legal Notice",
+    "privacyTitle": "Privacy Policy"
+  }
+}

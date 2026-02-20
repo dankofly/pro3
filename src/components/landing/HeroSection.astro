@@ -1,0 +1,60 @@
+---
+export interface Props {
+  title: string;
+  subtitle: string;
+  ctaPrimary: string;
+  ctaSecondary: string;
+  ctaSecondaryNote: string;
+  ctaSecondaryUrl: string;
+  trustLine: string;
+}
+
+const {
+  title,
+  subtitle,
+  ctaPrimary,
+  ctaSecondary,
+  ctaSecondaryNote,
+  ctaSecondaryUrl,
+  trustLine,
+} = Astro.props;
+---
+
+<section class="relative min-h-[85vh] flex items-center justify-center bg-gradient-to-b from-sky-100 via-sky-50 to-white">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-16 sm:py-24">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+      {title}
+    </h1>
+
+    <p class="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed">
+      {subtitle}
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+      <a
+        href="#anfrage"
+        class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-sky-600 hover:bg-sky-700 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full sm:w-auto"
+      >
+        {ctaPrimary}
+      </a>
+
+      <a
+        href={ctaSecondaryUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex flex-col items-center justify-center px-8 py-4 text-lg font-semibold text-sky-700 bg-white border-2 border-sky-200 hover:border-sky-400 rounded-lg shadow hover:shadow-md transition-all duration-200 w-full sm:w-auto"
+      >
+        <span>{ctaSecondary}</span>
+        <span class="text-xs font-normal text-gray-500 mt-0.5">{ctaSecondaryNote}</span>
+      </a>
+    </div>
+
+    <p class="text-sm text-gray-500">
+      {trustLine}
+    </p>
+  </div>
+</section>

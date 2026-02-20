@@ -1,0 +1,53 @@
+---
+import { siteConfig } from '~/config/site';
+
+export interface Props {
+  type: 'LocalBusiness' | 'FAQPage';
+  locale?: string;
+  faqItems?: Array<{ question: string; answer: string }>;
+}
+
+const { type, locale = 'de', faqItems = [] } = Astro.props;
+
+function buildLocalBusinessSchema() {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: siteConfig.legal.companyName,
+    url: siteConfig.site.url,
+    telephone: siteConfig.contact.phone,
+    email: siteConfig.contact.email,
+  };
+
+  if (siteConfig.legal.address.street && !siteConfig.legal.address.street.startsWith('TODO')) {
+    schema.address = {
+      '@type': 'PostalAddress',
+      streetAddress: siteConfig.legal.address.street,
+      postalCode: siteConfig.legal.address.zip,
+      addressLocality: siteConfig.legal.address.city,
+      addressCountry: 'AT',
+    };
+  }
+
+  return schema;
+}
+
+function buildFAQSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+}
+
+const schema = type === 'FAQPage' ? buildFAQSchema() : buildLocalBusinessSchema();
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

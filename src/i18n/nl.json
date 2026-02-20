@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "Tandemvlucht Lienz – Paragliden boven de Lienzer Dolomieten",
+    "description": "Tandemvlucht in Oost-Tirol: start vanaf Zettersfeld of Hochstein en zweef boven het Draudal. Vraag nu beschikbaarheid aan.",
+    "ogTitle": "Tandemvlucht Lienz – Paragliden Oost-Tirol",
+    "ogDescription": "Tandem paragliden boven de Lienzer Dolomieten. Startplaatsen Zettersfeld/Steinermandl en Hochstein. Nu aanvragen."
+  },
+  "nav": {
+    "home": "Home",
+    "howItWorks": "Hoe het werkt",
+    "launchSites": "Startplaatsen",
+    "regions": "Regio's",
+    "faq": "FAQ",
+    "contact": "Aanvraag",
+    "bookNow": "Nu boeken",
+    "requestAvailability": "Beschikbaarheid aanvragen"
+  },
+  "hero": {
+    "title": "Tandemvlucht boven de Lienzer Dolomieten",
+    "subtitle": "Je vlucht start vanaf Zettersfeld of Hochstein – afhankelijk van wind en weer. Samen met een ervaren piloot zweef je boven het Draudal en de bergen van Oost-Tirol.",
+    "ctaPrimary": "Beschikbaarheid aanvragen",
+    "ctaSecondary": "Direct naar boeking",
+    "ctaSecondaryNote": "op gleitschirm-tandemflug.com",
+    "trustLine": "Gecertificeerde tandempiloten · Vlieggebied Airpark Lienzer Dolomiten"
+  },
+  "howItWorks": {
+    "sectionTitle": "Zo werkt je tandemvlucht",
+    "steps": [
+      {
+        "title": "Aanvraag doen",
+        "description": "Laat ons weten wanneer je er bent en met hoeveel je wilt vliegen. Via het formulier of WhatsApp."
+      },
+      {
+        "title": "Trefpunt afspreken",
+        "description": "We nemen contact op en bepalen het trefpunt. Dat hangt af van het weer en de startplaats."
+      },
+      {
+        "title": "Omhoog & briefing",
+        "description": "Samen gaan we naar de startplaats. Korte briefing – dan gaan we de lucht in."
+      },
+      {
+        "title": "Vliegen",
+        "description": "~20–30 minuten boven het Draudal. Lienzer Dolomieten onder je, uitzicht richting Hohe Tauern."
+      },
+      {
+        "title": "Landing & foto's",
+        "description": "Zachte landing in het dal. Foto's en video's van je vlucht krijg je direct daarna."
+      }
+    ]
+  },
+  "launchSites": {
+    "sectionTitle": "Startplaatsen & uitzicht",
+    "intro": "In het Airpark Lienzer Dolomiten vliegen we vanaf twee startplaatsen. Vanaf welke plek we starten hangt af van het weer – zo vlieg je altijd in de beste omstandigheden.",
+    "sites": [
+      {
+        "name": "Zettersfeld / Steinermandl",
+        "description": "Ruime startplaats boven Lienz. Panoramisch uitzicht op de Lienzer Dolomieten en het Draudal."
+      },
+      {
+        "name": "Hochstein",
+        "description": "Startplaats bij Hochstein met uitzicht over Lienz en de omliggende bergen."
+      }
+    ],
+    "weatherNote": "Het trefpunt wordt bepaald op basis van weer en startplaats – meestal bij het dalstation of bij de landingszones."
+  },
+  "regions": {
+    "sectionTitle": "Tandemvlucht – waar je ook logeert in de regio",
+    "sectionSubtitle": "Onze startplaatsen in Lienz zijn vanuit de hele regio goed bereikbaar.",
+    "items": [
+      {
+        "id": "lienz",
+        "name": "Lienz & Oost-Tirol",
+        "content": "Verblijf je in of rond Lienz? De tandemvlucht is slechts een korte rit verwijderd. Onze startplaatsen Zettersfeld en Hochstein liggen direct boven de stad. Een perfect hoogtepunt voor een dagje uit – of een spontaan plan als het weer meewerkt."
+      },
+      {
+        "id": "oberkaernten",
+        "name": "Opper-Karinthië",
+        "content": "Vanuit Opper-Karinthië is Lienz goed bereikbaar. Een tandemvlucht is een prima daguitstap – 's ochtends vertrekken, rond het middaguur vliegen, 's middags de oude binnenstad van Lienz verkennen of ontspannen bij de Tristacher See."
+      },
+      {
+        "id": "drautal",
+        "name": "Draudal",
+        "content": "Langs het Draudal tussen Spittal en Lienz ligt ons trefpunt praktisch op de route. Als je vakantie viert in het Draudal, bereik je ons zonder omwegen."
+      },
+      {
+        "id": "moelltal",
+        "name": "Mölltal",
+        "content": "Vanuit het Mölltal is Lienz goed bereikbaar. Combineer een dag bij de Großglockner met een tandemvlucht boven de Lienzer Dolomieten – twee perspectieven op dezelfde bergen."
+      },
+      {
+        "id": "iseltal",
+        "name": "Iseldal & Matrei",
+        "content": "Vanuit Matrei in Oost-Tirol is het een korte rit naar Lienz. Een tandemvlucht is een welkome afwisseling van het wandelprogramma en laat je het dal vanuit een heel ander perspectief zien."
+      },
+      {
+        "id": "kals",
+        "name": "Kals am Großglockner",
+        "content": "In Kals draait alles om de Großglockner. Van boven zie je hem ook – tijdens een tandemvlucht vanuit Lienz. De rit is overzichtelijk en de vlucht past prima in een dag met wandeling of bergexcursie."
+      },
+      {
+        "id": "defereggental",
+        "name": "St. Jakob in het Defereggental",
+        "content": "Het Defereggental is rustig en ongerept. Op zoek naar afwisseling? Een tandemvlucht vanuit Lienz is het perfecte contrast met je dagelijkse wandelingen – en een ervaring die je bijblijft."
+      },
+      {
+        "id": "pustertal",
+        "name": "Pusterdal – Sillian & Obertilliach",
+        "content": "Vanuit het Pusterdal is Lienz de dichtstbijzijnde grotere plaats. Tandem paragliden is een outdoor-activiteit die hier verder niet zo makkelijk beschikbaar is – en het uitzicht over de Dolomieten is het meer dan waard."
+      }
+    ]
+  },
+  "safety": {
+    "sectionTitle": "Weer, veiligheid & wat meenemen",
+    "weather": {
+      "title": "Weer & veiligheid",
+      "content": "Of er gevlogen wordt, beslist de piloot op basis van de actuele weersomstandigheden. Veiligheid staat altijd voorop. Bij ongeschikte omstandigheden plannen we de vlucht opnieuw in – zonder stress."
+    },
+    "planning": {
+      "title": "Plannen rond het weer",
+      "content": "Bergweer verandert snel. Daarom spreken we de vliegtijd op korte termijn en flexibel af. Neem het beste een paar dagen voor je gewenste datum contact op – dan vinden we samen het ideale moment."
+    },
+    "packingList": {
+      "title": "Wat je mee moet nemen",
+      "items": [
+        "Stevige schoenen (wandelschoenen ideaal, geen sandalen)",
+        "Lange broek",
+        "Jas of fleece – het kan boven een stuk kouder zijn",
+        "Zonnebril en zonnebescherming",
+        "Geen grote rugzakken nodig"
+      ]
+    },
+    "suitability": {
+      "title": "Voor wie geschikt?",
+      "content": "Tandemvluchten zijn geschikt voor bijna iedereen – geen ervaring nodig. Ook kinderen kunnen meevliegen, zolang ze de instructies van de piloot begrijpen en opvolgen. Bij gezondheidsproblemen even vooraf overleggen."
+    }
+  },
+  "faq": {
+    "sectionTitle": "Veelgestelde vragen",
+    "items": [
+      {
+        "question": "Hoe lang duurt de vlucht?",
+        "answer": "Meestal ~20–30 minuten. De precieze duur hangt af van de thermische omstandigheden en het weer."
+      },
+      {
+        "question": "Heb ik ervaring nodig?",
+        "answer": "Nee. Je vliegt met een gecertificeerde tandempiloot die alles bestuurt. Je hoeft alleen bij de start een paar stappen mee te rennen."
+      },
+      {
+        "question": "Wat moet ik aantrekken?",
+        "answer": "Stevige schoenen (wandelschoenen ideaal), lange broek, jas. Het kan boven een stuk kouder zijn dan in het dal."
+      },
+      {
+        "question": "Kunnen kinderen meevliegen?",
+        "answer": "In principe wel. Belangrijk is dat ze de instructies van de piloot kunnen begrijpen en opvolgen."
+      },
+      {
+        "question": "Wat als het weer slecht is?",
+        "answer": "Veiligheid gaat voor. Als de omstandigheden niet goed zijn, plannen we de vlucht opnieuw in. Daarom nemen we vooraf contact op om het beste moment te vinden."
+      },
+      {
+        "question": "Waar spreken we af?",
+        "answer": "Het exacte trefpunt bepalen we op basis van weer en startplaats. Meestal spreken we af bij het dalstation of bij de landingszones."
+      },
+      {
+        "question": "Zijn er foto's en video's?",
+        "answer": "Ja, foto- en video-opnames van je vlucht zijn mogelijk. Details bespreken we bij de boeking."
+      },
+      {
+        "question": "Hoe veilig is tandem paragliden?",
+        "answer": "Tandemvluchten worden uitsluitend uitgevoerd door gecertificeerde piloten met gecertificeerde uitrusting. Of we vliegen hangt altijd af van de actuele weersomstandigheden."
+      },
+      {
+        "question": "Kan ik vliegen als ik hoogtevrees heb?",
+        "answer": "Veel passagiers hebben aanvankelijk respect voor de hoogte. De meesten vertellen dat vliegen anders voelt dan op een berg staan – meer als zweven."
+      }
+    ]
+  },
+  "form": {
+    "sectionTitle": "Beschikbaarheid aanvragen",
+    "sectionSubtitle": "Stuur ons je gewenste data – we nemen contact op met een voorstel.",
+    "fields": {
+      "region": {
+        "label": "Waar verblijf je?",
+        "placeholder": "Regio selecteren",
+        "options": {
+          "lienz": "Lienz / Oost-Tirol",
+          "oberkaernten": "Opper-Karinthië",
+          "drautal": "Draudal",
+          "moelltal": "Mölltal",
+          "iseltal": "Iseldal / Matrei",
+          "kals": "Kals am Großglockner",
+          "defereggental": "Defereggental",
+          "pustertal": "Pusterdal (Sillian, Obertilliach)",
+          "other": "Andere regio"
+        }
+      },
+      "date": {
+        "label": "Gewenste datum",
+        "placeholder": "bijv. 15 juli of 'volgende week dinsdag'"
+      },
+      "persons": {
+        "label": "Aantal personen",
+        "placeholder": "Met hoeveel willen jullie vliegen?"
+      },
+      "phone": {
+        "label": "Telefoon / WhatsApp",
+        "placeholder": "Voor het afspreken van de details"
+      },
+      "email": {
+        "label": "E-mail (optioneel)",
+        "placeholder": "Je e-mailadres"
+      },
+      "message": {
+        "label": "Bericht (optioneel)",
+        "placeholder": "Speciale wensen, vragen, etc."
+      },
+      "submit": "Aanvraag versturen",
+      "privacy": "Door te versturen ga je akkoord met de verwerking van je gegevens volgens ons {link}.",
+      "privacyLink": "privacybeleid"
+    }
+  },
+  "thankYou": {
+    "title": "Bedankt voor je aanvraag!",
+    "message": "We hebben je gegevens ontvangen en nemen snel contact op – per telefoon, WhatsApp of e-mail.",
+    "nextSteps": "Hoe het verder gaat:",
+    "steps": [
+      "We checken het weer voor je gewenste datum.",
+      "Je ontvangt een tijdsvoorstel met trefpunt.",
+      "Op de vliegdag spreken we af en gaan samen de lucht in."
+    ],
+    "ctaMain": "Direct naar boeking op gleitschirm-tandemflug.com",
+    "ctaBack": "Terug naar homepagina"
+  },
+  "footer": {
+    "tagline": "Tandemvlucht Lienz – Paragliden in het Airpark Lienzer Dolomiten",
+    "nav": {
+      "imprint": "Colofon",
+      "privacy": "Privacybeleid",
+      "mainSite": "gleitschirm-tandemflug.com"
+    },
+    "copyright": "© {year} tandemflug-lienz.com"
+  },
+  "stickyBar": {
+    "call": "Bellen",
+    "whatsapp": "WhatsApp",
+    "request": "Aanvraag"
+  },
+  "langSwitch": {
+    "de": "Deutsch",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "legal": {
+    "impressumTitle": "Colofon",
+    "privacyTitle": "Privacybeleid"
+  }
+}

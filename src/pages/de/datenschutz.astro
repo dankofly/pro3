@@ -1,0 +1,17 @@
+---
+import LandingPageLayout from '~/layouts/LandingPageLayout.astro';
+import { t } from '~/i18n/utils';
+
+const locale = 'de';
+const dict = t(locale);
+
+const legalContent = await import('~/content/legal/de/datenschutz.md');
+---
+
+<LandingPageLayout locale={locale} currentPath="/de/datenschutz" dict={dict}>
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 prose prose-gray">
+      <legalContent.default />
+    </div>
+  </section>
+</LandingPageLayout>

@@ -1,0 +1,68 @@
+---
+import LandingPageLayout from '~/layouts/LandingPageLayout.astro';
+import HeroSection from '~/components/landing/HeroSection.astro';
+import HowItWorks from '~/components/landing/HowItWorks.astro';
+import LaunchSites from '~/components/landing/LaunchSites.astro';
+import RegionModules from '~/components/landing/RegionModules.astro';
+import SafetySection from '~/components/landing/SafetySection.astro';
+import FAQSection from '~/components/landing/FAQSection.astro';
+import LeadForm from '~/components/landing/LeadForm.astro';
+
+import { t } from '~/i18n/utils';
+import { buildMainSiteUrl } from '~/config/site';
+
+const locale = 'de';
+const dict = t(locale);
+const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
+---
+
+<LandingPageLayout locale={locale} currentPath="/de/" dict={dict} faqItems={dict.faq.items}>
+  <HeroSection
+    title={dict.hero.title}
+    subtitle={dict.hero.subtitle}
+    ctaPrimary={dict.hero.ctaPrimary}
+    ctaSecondary={dict.hero.ctaSecondary}
+    ctaSecondaryNote={dict.hero.ctaSecondaryNote}
+    ctaSecondaryUrl={ctaSecondaryUrl}
+    trustLine={dict.hero.trustLine}
+  />
+
+  <HowItWorks
+    sectionTitle={dict.howItWorks.sectionTitle}
+    steps={dict.howItWorks.steps}
+  />
+
+  <LaunchSites
+    sectionTitle={dict.launchSites.sectionTitle}
+    intro={dict.launchSites.intro}
+    sites={dict.launchSites.sites}
+    weatherNote={dict.launchSites.weatherNote}
+  />
+
+  <RegionModules
+    sectionTitle={dict.regions.sectionTitle}
+    sectionSubtitle={dict.regions.sectionSubtitle}
+    regions={dict.regions.items}
+    ctaLabel={dict.nav.requestAvailability}
+  />
+
+  <SafetySection
+    sectionTitle={dict.safety.sectionTitle}
+    weather={dict.safety.weather}
+    planning={dict.safety.planning}
+    packingList={dict.safety.packingList}
+    suitability={dict.safety.suitability}
+  />
+
+  <FAQSection
+    sectionTitle={dict.faq.sectionTitle}
+    items={dict.faq.items}
+  />
+
+  <LeadForm
+    locale={locale}
+    sectionTitle={dict.form.sectionTitle}
+    sectionSubtitle={dict.form.sectionSubtitle}
+    fields={dict.form.fields}
+  />
+</LandingPageLayout>

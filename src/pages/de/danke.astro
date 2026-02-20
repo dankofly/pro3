@@ -1,0 +1,58 @@
+---
+import LandingPageLayout from '~/layouts/LandingPageLayout.astro';
+import { t } from '~/i18n/utils';
+import { buildMainSiteUrl } from '~/config/site';
+
+const locale = 'de';
+const dict = t(locale);
+const mainSiteUrl = buildMainSiteUrl('thank-you-cta', locale);
+---
+
+<LandingPageLayout locale={locale} currentPath="/de/danke" dict={dict}>
+  <section class="min-h-[70vh] flex items-center justify-center py-16 sm:py-24 bg-gradient-to-b from-sky-50 to-white">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 text-center">
+      <div class="w-16 h-16 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
+        <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        {dict.thankYou.title}
+      </h1>
+
+      <p class="text-lg text-gray-600 mb-8">
+        {dict.thankYou.message}
+      </p>
+
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-left mb-8">
+        <h2 class="font-semibold text-gray-900 mb-3">{dict.thankYou.nextSteps}</h2>
+        <ol class="space-y-2">
+          {dict.thankYou.steps.map((step, i) => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-sky-100 text-sky-700 text-sm font-semibold flex items-center justify-center">{i + 1}</span>
+              <span>{step}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a
+          href={mainSiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-sky-600 hover:bg-sky-700 rounded-lg transition-colors"
+        >
+          {dict.thankYou.ctaMain}
+        </a>
+        <a
+          href={`/${locale}/`}
+          class="inline-flex items-center px-6 py-3 text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          {dict.thankYou.ctaBack}
+        </a>
+      </div>
+    </div>
+  </section>
+</LandingPageLayout>

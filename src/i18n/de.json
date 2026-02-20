@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "Tandemflug Lienz – Paragliding über den Lienzer Dolomiten",
+    "description": "Tandemflug in Osttirol: Starte vom Zettersfeld oder Hochstein und gleite über das Drautal. Jetzt Verfügbarkeit anfragen.",
+    "ogTitle": "Tandemflug Lienz – Paragliding Osttirol",
+    "ogDescription": "Tandem-Paragliding über den Lienzer Dolomiten. Startplätze Zettersfeld/Steinermandl und Hochstein. Jetzt anfragen."
+  },
+  "nav": {
+    "home": "Start",
+    "howItWorks": "Ablauf",
+    "launchSites": "Startplätze",
+    "regions": "Regionen",
+    "faq": "FAQ",
+    "contact": "Anfrage",
+    "bookNow": "Jetzt buchen",
+    "requestAvailability": "Verfügbarkeit anfragen"
+  },
+  "hero": {
+    "title": "Tandemflug über den Lienzer Dolomiten",
+    "subtitle": "Dein Flug startet am Zettersfeld oder Hochstein – je nach Wind und Wetter. Gemeinsam mit einem erfahrenen Piloten gleitest du über das Drautal und die Bergwelt Osttirols.",
+    "ctaPrimary": "Verfügbarkeit anfragen",
+    "ctaSecondary": "Direkt zur Buchung",
+    "ctaSecondaryNote": "auf gleitschirm-tandemflug.com",
+    "trustLine": "Staatlich geprüfte Tandempiloten · Fluggebiet Airpark Lienzer Dolomiten"
+  },
+  "howItWorks": {
+    "sectionTitle": "So läuft dein Tandemflug ab",
+    "steps": [
+      {
+        "title": "Anfrage stellen",
+        "description": "Sag uns, wann du da bist und wie viele mitwollen. Über das Formular oder per WhatsApp."
+      },
+      {
+        "title": "Treffpunkt vereinbaren",
+        "description": "Wir melden uns und legen den Treffpunkt fest. Der hängt vom Wetter und Startplatz ab."
+      },
+      {
+        "title": "Auffahrt & Einweisung",
+        "description": "Gemeinsam geht's zum Startplatz. Kurze Einweisung – dann heben wir ab."
+      },
+      {
+        "title": "Fliegen",
+        "description": "~20–30 Minuten über dem Drautal. Lienzer Dolomiten unter dir, Blick Richtung Hohe Tauern."
+      },
+      {
+        "title": "Landung & Fotos",
+        "description": "Sanfte Landung im Tal. Fotos und Videos vom Flug gibt's direkt danach."
+      }
+    ]
+  },
+  "launchSites": {
+    "sectionTitle": "Startplätze & Aussicht",
+    "intro": "Im Airpark Lienzer Dolomiten fliegen wir von zwei Startplätzen. Von welchem wir starten, entscheidet das Wetter – so fliegst du immer in den besten Bedingungen.",
+    "sites": [
+      {
+        "name": "Zettersfeld / Steinermandl",
+        "description": "Weitläufiger Startplatz oberhalb von Lienz. Panorama auf die Lienzer Dolomiten und das Drautal."
+      },
+      {
+        "name": "Hochstein",
+        "description": "Startplatz am Hochstein mit Blick über Lienz und die umliegende Bergwelt."
+      }
+    ],
+    "weatherNote": "Der Treffpunkt wird je nach Wetter und Startplatz vereinbart – üblicherweise im Bereich der Talstation oder an den Landezonen."
+  },
+  "regions": {
+    "sectionTitle": "Tandemflug – egal wo in der Region du Urlaub machst",
+    "sectionSubtitle": "Unsere Startplätze in Lienz sind aus der gesamten Region gut erreichbar.",
+    "items": [
+      {
+        "id": "lienz",
+        "name": "Lienz & Osttirol",
+        "content": "Du bist in Lienz oder Umgebung? Dann ist der Tandemflug nur einen kurzen Weg entfernt. Unsere Startplätze Zettersfeld und Hochstein liegen direkt über der Stadt. Perfekt als Highlight für einen Urlaubstag – oder als spontane Idee, wenn das Wetter passt."
+      },
+      {
+        "id": "oberkaernten",
+        "name": "Oberkärnten",
+        "content": "Von Oberkärnten aus ist Lienz gut erreichbar. Der Tandemflug passt ideal als Tagesausflug – vormittags anreisen, mittags fliegen, nachmittags die Lienzer Altstadt erkunden oder am Tristacher See entspannen."
+      },
+      {
+        "id": "drautal",
+        "name": "Drautal",
+        "content": "Entlang des Drautals zwischen Spittal und Lienz liegt der Weg zum Startplatz quasi direkt auf der Route. Wer im Drautal Urlaub macht, erreicht den Treffpunkt ohne Umwege."
+      },
+      {
+        "id": "moelltal",
+        "name": "Mölltal",
+        "content": "Vom Mölltal ist Lienz über die Bundesstraße gut erreichbar. Kombiniere einen Tag im Großglockner-Gebiet mit einem Tandemflug über die Lienzer Dolomiten – zwei Perspektiven auf dieselbe Bergwelt."
+      },
+      {
+        "id": "iseltal",
+        "name": "Iseltal & Matrei",
+        "content": "Von Matrei in Osttirol ist es ein kurzer Weg nach Lienz. Der Tandemflug ist eine willkommene Abwechslung zum Wanderprogramm und zeigt das Tal nochmal aus einer ganz anderen Perspektive."
+      },
+      {
+        "id": "kals",
+        "name": "Kals am Großglockner",
+        "content": "In Kals dreht sich alles um den Großglockner. Von oben siehst du ihn auch – beim Tandemflug ab Lienz. Die Anfahrt ist überschaubar, und der Flug passt gut in einen Tag mit Wanderung oder Bergfahrt."
+      },
+      {
+        "id": "defereggental",
+        "name": "St. Jakob im Defereggental",
+        "content": "Das Defereggental ist ruhig und ursprünglich. Wer Abwechslung sucht: Der Tandemflug ab Lienz ist ein Kontrastprogramm zum Wanderalltag und ein Erlebnis, das in Erinnerung bleibt."
+      },
+      {
+        "id": "pustertal",
+        "name": "Pustertal – Sillian & Obertilliach",
+        "content": "Aus dem Pustertal ist Lienz der nächste größere Ort. Der Tandemflug ist eine Outdoor-Aktivität, die hier sonst nicht so einfach verfügbar ist – und der Blick über die Dolomiten lohnt sich."
+      }
+    ]
+  },
+  "safety": {
+    "sectionTitle": "Wetter, Sicherheit & Packliste",
+    "weather": {
+      "title": "Wetter & Sicherheit",
+      "content": "Ob geflogen wird, entscheidet der Pilot anhand der aktuellen Wetterlage. Sicherheit steht immer an erster Stelle. Bei unpassenden Bedingungen verschieben wir den Flug – ohne Stress."
+    },
+    "planning": {
+      "title": "Wetter-Planung",
+      "content": "Das Wetter in den Bergen ändert sich schnell. Deshalb vereinbaren wir den Flugtermin kurzfristig und flexibel. Am besten meldest du dich ein paar Tage vor deinem Wunschtermin – so finden wir gemeinsam das beste Zeitfenster."
+    },
+    "packingList": {
+      "title": "Was du mitbringen solltest",
+      "items": [
+        "Feste Schuhe (Wanderschuhe ideal, keine Sandalen)",
+        "Lange Hose",
+        "Jacke oder Fleece – es kann oben deutlich kühler sein",
+        "Sonnenbrille und Sonnenschutz",
+        "Keine sperrigen Rucksäcke nötig"
+      ]
+    },
+    "suitability": {
+      "title": "Für wen geeignet?",
+      "content": "Tandemflüge sind für fast alle geeignet – keine Erfahrung nötig. Auch Kinder können mitfliegen, wenn sie die Anweisungen des Piloten verstehen und befolgen können. Bei gesundheitlichen Einschränkungen vorher kurz Rücksprache halten."
+    }
+  },
+  "faq": {
+    "sectionTitle": "Häufige Fragen",
+    "items": [
+      {
+        "question": "Wie lange dauert der Flug?",
+        "answer": "In der Regel ~20–30 Minuten. Die genaue Dauer hängt von den thermischen Bedingungen und dem Wetter ab."
+      },
+      {
+        "question": "Brauche ich Erfahrung?",
+        "answer": "Nein. Du fliegst mit einem staatlich geprüften Tandempiloten, der die komplette Steuerung übernimmt. Du musst nur beim Start ein paar Schritte mitlaufen."
+      },
+      {
+        "question": "Was soll ich anziehen?",
+        "answer": "Feste Schuhe (Wanderschuhe ideal), lange Hose, Jacke. Es kann oben deutlich kühler sein als im Tal."
+      },
+      {
+        "question": "Können Kinder mitfliegen?",
+        "answer": "Grundsätzlich ja. Wichtig ist, dass sie die Anweisungen des Piloten verstehen und befolgen können."
+      },
+      {
+        "question": "Was ist bei schlechtem Wetter?",
+        "answer": "Sicherheit geht vor. Wenn die Bedingungen nicht passen, verschieben wir den Flug. Deshalb kontaktieren wir dich vorab, um den optimalen Zeitpunkt zu finden."
+      },
+      {
+        "question": "Wo ist der Treffpunkt?",
+        "answer": "Den genauen Treffpunkt vereinbaren wir je nach Wetter und Startplatz. Üblicherweise treffen wir uns im Bereich der Talstation oder an den Landezonen."
+      },
+      {
+        "question": "Gibt es Fotos und Videos?",
+        "answer": "Ja, Foto- und Videoaufnahmen vom Flug sind möglich. Details besprechen wir bei der Buchung."
+      },
+      {
+        "question": "Wie sicher ist Tandem-Paragliding?",
+        "answer": "Tandemflüge werden ausschließlich von geprüften Piloten mit zertifizierter Ausrüstung durchgeführt. Ob geflogen wird, hängt immer von den aktuellen Wetterbedingungen ab."
+      },
+      {
+        "question": "Kann ich fliegen, wenn ich Höhenangst habe?",
+        "answer": "Viele Passagiere haben anfangs Respekt vor der Höhe. Die meisten berichten, dass sich das Fliegen anders anfühlt als auf einem Berg zu stehen – mehr wie Schweben."
+      }
+    ]
+  },
+  "form": {
+    "sectionTitle": "Verfügbarkeit anfragen",
+    "sectionSubtitle": "Schick uns deine Wunschdaten – wir melden uns mit einem Vorschlag.",
+    "fields": {
+      "region": {
+        "label": "Wo machst du Urlaub?",
+        "placeholder": "Region auswählen",
+        "options": {
+          "lienz": "Lienz / Osttirol",
+          "oberkaernten": "Oberkärnten",
+          "drautal": "Drautal",
+          "moelltal": "Mölltal",
+          "iseltal": "Iseltal / Matrei",
+          "kals": "Kals am Großglockner",
+          "defereggental": "Defereggental",
+          "pustertal": "Pustertal (Sillian, Obertilliach)",
+          "other": "Andere Region"
+        }
+      },
+      "date": {
+        "label": "Wunschtermin",
+        "placeholder": "z.B. 15. Juli oder 'nächste Woche Dienstag'"
+      },
+      "persons": {
+        "label": "Anzahl Personen",
+        "placeholder": "Wie viele wollen fliegen?"
+      },
+      "phone": {
+        "label": "Telefon / WhatsApp",
+        "placeholder": "Für die Terminabsprache"
+      },
+      "email": {
+        "label": "E-Mail (optional)",
+        "placeholder": "Deine E-Mail-Adresse"
+      },
+      "message": {
+        "label": "Nachricht (optional)",
+        "placeholder": "Besondere Wünsche, Fragen, etc."
+      },
+      "submit": "Anfrage absenden",
+      "privacy": "Mit dem Absenden stimmst du der Verarbeitung deiner Daten gemäß unserer {link} zu.",
+      "privacyLink": "Datenschutzerklärung"
+    }
+  },
+  "thankYou": {
+    "title": "Danke für deine Anfrage!",
+    "message": "Wir haben deine Daten erhalten und melden uns in Kürze – per Telefon, WhatsApp oder E-Mail.",
+    "nextSteps": "So geht's weiter:",
+    "steps": [
+      "Wir prüfen das Wetter für deinen Wunschtermin.",
+      "Du bekommst einen Terminvorschlag mit Treffpunkt.",
+      "Am Flugtag treffen wir uns und starten gemeinsam."
+    ],
+    "ctaMain": "Direkt zur Buchung auf gleitschirm-tandemflug.com",
+    "ctaBack": "Zurück zur Startseite"
+  },
+  "footer": {
+    "tagline": "Tandemflug Lienz – Paragliding im Airpark Lienzer Dolomiten",
+    "nav": {
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "mainSite": "gleitschirm-tandemflug.com"
+    },
+    "copyright": "© {year} tandemflug-lienz.com"
+  },
+  "stickyBar": {
+    "call": "Anrufen",
+    "whatsapp": "WhatsApp",
+    "request": "Anfrage"
+  },
+  "langSwitch": {
+    "de": "Deutsch",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "privacyTitle": "Datenschutzerklärung"
+  }
+}

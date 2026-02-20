@@ -1,0 +1,170 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { getPrivacyPath } from '~/i18n/utils';
+
+export interface Props {
+  locale: Locale;
+  sectionTitle: string;
+  sectionSubtitle: string;
+  fields: {
+    region: {
+      label: string;
+      placeholder: string;
+      options: Record<string, string>;
+    };
+    date: { label: string; placeholder: string };
+    persons: { label: string; placeholder: string };
+    phone: { label: string; placeholder: string };
+    email: { label: string; placeholder: string };
+    message: { label: string; placeholder: string };
+    submit: string;
+    privacy: string;
+    privacyLink: string;
+  };
+}
+
+const { locale, sectionTitle, sectionSubtitle, fields } = Astro.props;
+
+const privacyPath = getPrivacyPath(locale);
+const privacyText = fields.privacy.replace(
+  '{link}',
+  `<a href="${privacyPath}" class="underline hover:text-sky-700">${fields.privacyLink}</a>`
+);
+
+const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/${locale}/bedankt` : `/${locale}/thank-you`;
+---
+
+<section id="anfrage" class="py-16 sm:py-20 bg-sky-50">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-3">
+      {sectionTitle}
+    </h2>
+    <p class="text-gray-600 text-center mb-10">
+      {sectionSubtitle}
+    </p>
+
+    <form
+      name="tandemflug-anfrage"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action={thankYouPath}
+      class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100"
+    >
+      {/* Netlify hidden fields */}
+      <input type="hidden" name="form-name" value="tandemflug-anfrage" />
+      <input type="hidden" name="locale" value={locale} />
+      <p class="hidden">
+        <label>
+          Don't fill this out: <input name="bot-field" />
+        </label>
+      </p>
+
+      <div class="space-y-5">
+        {/* Region */}
+        <div>
+          <label for="region" class="block text-sm font-medium text-gray-700 mb-1">
+            {fields.region.label}
+          </label>
+          <select
+            id="region"
+            name="region"
+            required
+            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-sky-500 focus:ring-sky-500 text-gray-700 py-2.5 px-3 border"
+          >
+            <option value="" disabled selected>{fields.region.placeholder}</option>
+            {Object.entries(fields.region.options).map(([value, label]) => (
+              <option value={value}>{label}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Date */}
+        <div>
+          <label for="date" class="block text-sm font-medium text-gray-700 mb-1">
+            {fields.date.label}
+          </label>
+          <input
+            type="text"
+            id="date"
+            name="date"
+            required
+            placeholder={fields.date.placeholder}
+            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-sky-500 focus:ring-sky-500 py-2.5 px-3 border"
+          />
+        </div>
+
+        {/* Persons */}
+        <div>
+          <label for="persons" class="block text-sm font-medium text-gray-700 mb-1">
+            {fields.persons.label}
+          </label>
+          <input
+            type="number"
+            id="persons"
+            name="persons"
+            min="1"
+            max="20"
+            required
+            placeholder={fields.persons.placeholder}
+            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-sky-500 focus:ring-sky-500 py-2.5 px-3 border"
+          />
+        </div>
+
+        {/* Phone */}
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+            {fields.phone.label}
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder={fields.phone.placeholder}
+            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-sky-500 focus:ring-sky-500 py-2.5 px-3 border"
+          />
+        </div>
+
+        {/* Email */}
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+            {fields.email.label}
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder={fields.email.placeholder}
+            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-sky-500 focus:ring-sky-500 py-2.5 px-3 border"
+          />
+        </div>
+
+        {/* Message */}
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+            {fields.message.label}
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            placeholder={fields.message.placeholder}
+            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-sky-500 focus:ring-sky-500 py-2.5 px-3 border"
+          ></textarea>
+        </div>
+
+        {/* Submit */}
+        <button
+          type="submit"
+          class="w-full py-3.5 px-6 text-lg font-semibold text-white bg-sky-600 hover:bg-sky-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+        >
+          {fields.submit}
+        </button>
+
+        {/* Privacy note */}
+        <p class="text-xs text-gray-500 text-center" set:html={privacyText} />
+      </div>
+    </form>
+  </div>
+</section>
