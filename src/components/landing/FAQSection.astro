@@ -7,19 +7,19 @@ export interface Props {
 const { sectionTitle, items } = Astro.props;
 ---
 
-<section id="faq" class="py-16 sm:py-20 bg-alpine-800">
+<section id="faq" class="py-16 sm:py-20 bg-stone-50 dark:bg-alpine-800">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-white font-heading text-center mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white font-heading text-center mb-12">
       {sectionTitle}
     </h2>
 
     <div class="space-y-4">
       {items.map((item, index) => (
-        <details class="group bg-white/[0.03] rounded-lg border border-white/[0.06] intersect:animate-fade intersect-once" open={index === 0}>
-          <summary class="flex items-center justify-between cursor-pointer p-5 text-left font-medium text-white hover:text-sky-400 transition-colors">
+        <details class="group bg-white dark:bg-white/[0.03] rounded-lg border border-gray-200 dark:border-white/[0.06] intersect:animate-fade intersect-once" open={index === 0}>
+          <summary class="flex items-center justify-between cursor-pointer p-5 text-left font-medium text-slate-800 dark:text-white hover:text-orange-500 dark:hover:text-sky-400 transition-colors">
             <span>{item.question}</span>
             <svg
-              class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform flex-shrink-0 ml-4"
+              class="w-5 h-5 text-slate-400 dark:text-slate-500 group-open:rotate-180 transition-transform flex-shrink-0 ml-4"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -28,7 +28,7 @@ const { sectionTitle, items } = Astro.props;
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </summary>
-          <div class="px-5 pb-5 text-slate-400 leading-relaxed border-t border-white/[0.06] pt-4">
+          <div class="px-5 pb-5 text-slate-500 dark:text-slate-400 leading-relaxed border-t border-gray-100 dark:border-white/[0.06] pt-4">
             {item.answer}
           </div>
         </details>

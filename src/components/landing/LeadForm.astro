@@ -28,19 +28,19 @@ const { locale, sectionTitle, sectionSubtitle, fields } = Astro.props;
 const privacyPath = getPrivacyPath(locale);
 const privacyText = fields.privacy.replace(
   '{link}',
-  `<a href="${privacyPath}" class="underline hover:text-sky-400">${fields.privacyLink}</a>`
+  `<a href="${privacyPath}" class="underline hover:text-orange-500 dark:hover:text-sky-400">${fields.privacyLink}</a>`
 );
 
 const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/${locale}/bedankt` : `/${locale}/thank-you`;
 ---
 
-<section id="anfrage" class="py-16 sm:py-20 bg-gradient-to-b from-alpine-700 to-alpine-800 relative overflow-hidden">
+<section id="anfrage" class="py-16 sm:py-20 bg-gradient-to-b from-stone-50 to-white dark:from-alpine-700 dark:to-alpine-800 relative overflow-hidden">
   <div class="max-w-2xl mx-auto px-4 sm:px-6">
     <div class="glow-orb glow-orb-sky w-72 h-72 top-0 left-1/2 -translate-x-1/2 opacity-25"></div>
-    <h2 class="text-2xl sm:text-3xl font-bold text-white font-heading text-center mb-3">
+    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white font-heading text-center mb-3">
       {sectionTitle}
     </h2>
-    <p class="text-slate-400 text-center mb-10">
+    <p class="text-slate-500 dark:text-slate-400 text-center mb-10">
       {sectionSubtitle}
     </p>
 
@@ -64,14 +64,14 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
       <div class="space-y-5">
         {/* Region */}
         <div>
-          <label for="region" class="block text-sm font-medium text-slate-300 mb-1">
+          <label for="region" class="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
             {fields.region.label}
           </label>
           <select
             id="region"
             name="region"
             required
-            class="w-full rounded-lg bg-white/[0.05] border-white/[0.1] text-slate-300 focus:border-sky-400 focus:ring-sky-400/30 placeholder:text-slate-600 py-2.5 px-3 border"
+            class="w-full rounded-lg bg-gray-50 dark:bg-white/[0.05] border-gray-200 dark:border-white/[0.1] text-slate-800 dark:text-slate-300 focus:border-orange-400 dark:focus:border-sky-400 focus:ring-orange-400/30 dark:focus:ring-sky-400/30 placeholder:text-slate-400 dark:placeholder:text-slate-600 py-2.5 px-3 border"
           >
             <option value="" disabled selected>{fields.region.placeholder}</option>
             {Object.entries(fields.region.options).map(([value, label]) => (
@@ -82,7 +82,7 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
 
         {/* Date */}
         <div>
-          <label for="date" class="block text-sm font-medium text-slate-300 mb-1">
+          <label for="date" class="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
             {fields.date.label}
           </label>
           <input
@@ -91,13 +91,13 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
             name="date"
             required
             placeholder={fields.date.placeholder}
-            class="w-full rounded-lg bg-white/[0.05] border-white/[0.1] text-slate-300 focus:border-sky-400 focus:ring-sky-400/30 placeholder:text-slate-600 py-2.5 px-3 border"
+            class="w-full rounded-lg bg-gray-50 dark:bg-white/[0.05] border-gray-200 dark:border-white/[0.1] text-slate-800 dark:text-slate-300 focus:border-orange-400 dark:focus:border-sky-400 focus:ring-orange-400/30 dark:focus:ring-sky-400/30 placeholder:text-slate-400 dark:placeholder:text-slate-600 py-2.5 px-3 border"
           />
         </div>
 
         {/* Persons */}
         <div>
-          <label for="persons" class="block text-sm font-medium text-slate-300 mb-1">
+          <label for="persons" class="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
             {fields.persons.label}
           </label>
           <input
@@ -108,13 +108,13 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
             max="20"
             required
             placeholder={fields.persons.placeholder}
-            class="w-full rounded-lg bg-white/[0.05] border-white/[0.1] text-slate-300 focus:border-sky-400 focus:ring-sky-400/30 placeholder:text-slate-600 py-2.5 px-3 border"
+            class="w-full rounded-lg bg-gray-50 dark:bg-white/[0.05] border-gray-200 dark:border-white/[0.1] text-slate-800 dark:text-slate-300 focus:border-orange-400 dark:focus:border-sky-400 focus:ring-orange-400/30 dark:focus:ring-sky-400/30 placeholder:text-slate-400 dark:placeholder:text-slate-600 py-2.5 px-3 border"
           />
         </div>
 
         {/* Phone */}
         <div>
-          <label for="phone" class="block text-sm font-medium text-slate-300 mb-1">
+          <label for="phone" class="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
             {fields.phone.label}
           </label>
           <input
@@ -123,13 +123,13 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
             name="phone"
             required
             placeholder={fields.phone.placeholder}
-            class="w-full rounded-lg bg-white/[0.05] border-white/[0.1] text-slate-300 focus:border-sky-400 focus:ring-sky-400/30 placeholder:text-slate-600 py-2.5 px-3 border"
+            class="w-full rounded-lg bg-gray-50 dark:bg-white/[0.05] border-gray-200 dark:border-white/[0.1] text-slate-800 dark:text-slate-300 focus:border-orange-400 dark:focus:border-sky-400 focus:ring-orange-400/30 dark:focus:ring-sky-400/30 placeholder:text-slate-400 dark:placeholder:text-slate-600 py-2.5 px-3 border"
           />
         </div>
 
         {/* Email */}
         <div>
-          <label for="email" class="block text-sm font-medium text-slate-300 mb-1">
+          <label for="email" class="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
             {fields.email.label}
           </label>
           <input
@@ -137,13 +137,13 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
             id="email"
             name="email"
             placeholder={fields.email.placeholder}
-            class="w-full rounded-lg bg-white/[0.05] border-white/[0.1] text-slate-300 focus:border-sky-400 focus:ring-sky-400/30 placeholder:text-slate-600 py-2.5 px-3 border"
+            class="w-full rounded-lg bg-gray-50 dark:bg-white/[0.05] border-gray-200 dark:border-white/[0.1] text-slate-800 dark:text-slate-300 focus:border-orange-400 dark:focus:border-sky-400 focus:ring-orange-400/30 dark:focus:ring-sky-400/30 placeholder:text-slate-400 dark:placeholder:text-slate-600 py-2.5 px-3 border"
           />
         </div>
 
         {/* Message */}
         <div>
-          <label for="message" class="block text-sm font-medium text-slate-300 mb-1">
+          <label for="message" class="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
             {fields.message.label}
           </label>
           <textarea
@@ -151,20 +151,20 @@ const thankYouPath = locale === 'de' ? `/${locale}/danke` : locale === 'nl' ? `/
             name="message"
             rows="3"
             placeholder={fields.message.placeholder}
-            class="w-full rounded-lg bg-white/[0.05] border-white/[0.1] text-slate-300 focus:border-sky-400 focus:ring-sky-400/30 placeholder:text-slate-600 py-2.5 px-3 border"
+            class="w-full rounded-lg bg-gray-50 dark:bg-white/[0.05] border-gray-200 dark:border-white/[0.1] text-slate-800 dark:text-slate-300 focus:border-orange-400 dark:focus:border-sky-400 focus:ring-orange-400/30 dark:focus:ring-sky-400/30 placeholder:text-slate-400 dark:placeholder:text-slate-600 py-2.5 px-3 border"
           ></textarea>
         </div>
 
         {/* Submit */}
         <button
           type="submit"
-          class="w-full py-3.5 px-6 text-lg font-semibold text-white bg-sky-500 hover:bg-sky-400 rounded-xl shadow-lg shadow-sky-500/25 hover:shadow-sky-400/30 transition-all duration-200"
+          class="w-full py-3.5 px-6 text-lg font-semibold text-white bg-orange-500 dark:bg-sky-500 hover:bg-orange-600 dark:hover:bg-sky-400 rounded-xl shadow-lg shadow-orange-500/25 dark:shadow-sky-500/25 hover:shadow-orange-400/30 dark:hover:shadow-sky-400/30 transition-all duration-200"
         >
           {fields.submit}
         </button>
 
         {/* Privacy note */}
-        <p class="text-xs text-slate-500 text-center" set:html={privacyText} />
+        <p class="text-xs text-slate-400 dark:text-slate-500 text-center" set:html={privacyText} />
       </div>
     </form>
   </div>
