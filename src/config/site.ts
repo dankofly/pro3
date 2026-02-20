@@ -24,37 +24,29 @@ export const siteConfig = {
     campaign: 'osttirol-lp',
   },
 
-  /**
-   * Business contact details
-   * TODO: Operator must fill these in
-   */
+  /** Business contact details */
   contact: {
-    phone: '+43 TODO PHONE',
-    whatsapp: '+43 TODO WHATSAPP',
-    email: 'TODO@tandemflug-lienz.com',
+    phone: '+43 676 7293888',
+    whatsapp: '+43 676 7293888',
+    email: 'info@Gleitschirm-Tandemflug.com',
   },
 
-  /**
-   * Legal entity / NAP data
-   * NOTE: Different source pages show different addresses
-   * (Assling/Thal-Aue vs. Nußdorf/Weidachweg).
-   * Operator must verify and use the legally correct address.
-   */
+  /** Legal entity / NAP data */
   legal: {
-    companyName: 'TODO: Firmenname',
+    companyName: 'Gleitschirm-Tandemflug.com',
     address: {
-      street: 'TODO: Straße + Hausnummer',
-      zip: 'TODO: PLZ',
-      city: 'TODO: Ort',
+      street: 'Unterassling 29',
+      zip: '9911',
+      city: 'Assling',
       country: 'Österreich',
     },
     vatId: '',
     registerNumber: '',
   },
 
-  /** Social media links – leave empty if not applicable */
+  /** Social media links */
   social: {
-    instagram: '',
+    instagram: 'https://www.instagram.com/tandemfluglienz/',
     facebook: '',
     youtube: '',
   },
