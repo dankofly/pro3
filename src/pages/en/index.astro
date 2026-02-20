@@ -6,27 +6,30 @@ import LaunchSites from '~/components/landing/LaunchSites.astro';
 import RegionModules from '~/components/landing/RegionModules.astro';
 import SafetySection from '~/components/landing/SafetySection.astro';
 import FAQSection from '~/components/landing/FAQSection.astro';
-import LeadForm from '~/components/landing/LeadForm.astro';
+import ContactCTA from '~/components/landing/ContactCTA.astro';
 import PricingSection from '~/components/landing/PricingSection.astro';
 import SocialProofSection from '~/components/landing/SocialProofSection.astro';
 
 import { t } from '~/i18n/utils';
-import { buildMainSiteUrl } from '~/config/site';
+import { buildMainSiteUrl, siteConfig } from '~/config/site';
 
 const locale = 'en';
 const dict = t(locale);
-const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
+const ctaUrl = buildMainSiteUrl('cta-primary', locale);
+const whatsappNumber = siteConfig.contact.whatsapp.replace(/[^0-9]/g, '');
+const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 ---
 
-<LandingPageLayout locale={locale} currentPath="/en/" dict={dict} faqItems={dict.faq.items}>
+<LandingPageLayout locale={locale} currentPath="/en/" dict={dict} ctaUrl={ctaUrl} whatsappUrl={whatsappUrl} faqItems={dict.faq.items}>
   <HeroSection
     title={dict.hero.title}
     tagline={dict.hero.tagline}
     subtitle={dict.hero.subtitle}
     ctaPrimary={dict.hero.ctaPrimary}
-    ctaSecondary={dict.hero.ctaSecondary}
-    ctaSecondaryNote={dict.hero.ctaSecondaryNote}
-    ctaSecondaryUrl={ctaSecondaryUrl}
+    ctaPrimaryNote={dict.hero.ctaPrimaryNote}
+    ctaPrimaryUrl={ctaUrl}
+    ctaWhatsapp={dict.hero.ctaWhatsapp}
+    whatsappUrl={whatsappUrl}
     trustLine={dict.hero.trustLine}
   />
 
@@ -49,9 +52,9 @@ const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
     sectionSubtitle={dict.pricing.sectionSubtitle}
     packages={dict.pricing.packages}
     ctaLabel={dict.pricing.ctaLabel}
+    ctaUrl={ctaUrl}
     whatsappLabel={dict.pricing.whatsappLabel}
     voucherNote={dict.pricing.voucherNote}
-    voucherLink={dict.pricing.voucherLink}
   />
 
   <RegionModules
@@ -59,6 +62,7 @@ const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
     sectionSubtitle={dict.regions.sectionSubtitle}
     regions={dict.regions.items}
     ctaLabel={dict.nav.requestAvailability}
+    ctaUrl={ctaUrl}
   />
 
   <SafetySection
@@ -74,10 +78,11 @@ const ctaSecondaryUrl = buildMainSiteUrl('hero-secondary', locale);
     items={dict.faq.items}
   />
 
-  <LeadForm
-    locale={locale}
-    sectionTitle={dict.form.sectionTitle}
-    sectionSubtitle={dict.form.sectionSubtitle}
-    fields={dict.form.fields}
+  <ContactCTA
+    sectionTitle={dict.contactCta.sectionTitle}
+    phoneLabel={dict.contactCta.phoneLabel}
+    emailLabel={dict.contactCta.emailLabel}
+    whatsappLabel={dict.contactCta.whatsappLabel}
+    callLabel={dict.contactCta.callLabel}
   />
 </LandingPageLayout>

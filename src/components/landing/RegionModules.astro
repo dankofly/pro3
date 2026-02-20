@@ -4,9 +4,10 @@ export interface Props {
   sectionSubtitle: string;
   regions: Array<{ id: string; name: string; content: string }>;
   ctaLabel: string;
+  ctaUrl: string;
 }
 
-const { sectionTitle, sectionSubtitle, regions, ctaLabel } = Astro.props;
+const { sectionTitle, sectionSubtitle, regions, ctaLabel, ctaUrl } = Astro.props;
 ---
 
 <section id="regionen" class="py-16 sm:py-20 bg-stone-50 dark:bg-alpine-800">
@@ -31,7 +32,9 @@ const { sectionTitle, sectionSubtitle, regions, ctaLabel } = Astro.props;
             {region.content}
           </p>
           <a
-            href="#anfrage"
+            href={ctaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center text-sm font-medium text-orange-500 dark:text-sky-400 hover:text-orange-600 dark:hover:text-sky-300 transition-colors"
           >
             {ctaLabel}

@@ -21,8 +21,8 @@
     "tagline": "Tandem paragliden met KOFLY – Vlieg mee!",
     "subtitle": "Start met ons vanaf Zettersfeld of Hochstein en geniet van de vrijheid van het vliegen – eerste rij, voeten vrij, in de prachtige bergen van Oost-Tirol.",
     "ctaPrimary": "Beschikbaarheid aanvragen",
-    "ctaSecondary": "Direct naar boeking",
-    "ctaSecondaryNote": "op gleitschirm-tandemflug.com",
+    "ctaPrimaryNote": "op gleitschirm-tandemflug.com",
+    "ctaWhatsapp": "WhatsApp",
     "trustLine": "Gecertificeerde tandempiloten · KOFLY · Airpark Lienzer Dolomiten"
   },
   "howItWorks": {
@@ -177,49 +177,12 @@
       }
     ]
   },
-  "form": {
-    "sectionTitle": "Beschikbaarheid aanvragen",
-    "sectionSubtitle": "Stuur ons je gewenste data – we nemen contact op met een voorstel.",
-    "fields": {
-      "region": {
-        "label": "Waar verblijf je?",
-        "placeholder": "Regio selecteren",
-        "options": {
-          "lienz": "Lienz / Oost-Tirol",
-          "oberkaernten": "Opper-Karinthië",
-          "drautal": "Draudal",
-          "moelltal": "Mölltal",
-          "iseltal": "Iseldal / Matrei",
-          "kals": "Kals am Großglockner",
-          "defereggental": "Defereggental",
-          "pustertal": "Pusterdal (Sillian, Obertilliach)",
-          "other": "Andere regio"
-        }
-      },
-      "date": {
-        "label": "Gewenste datum",
-        "placeholder": "bijv. 15 juli of 'volgende week dinsdag'"
-      },
-      "persons": {
-        "label": "Aantal personen",
-        "placeholder": "Met hoeveel willen jullie vliegen?"
-      },
-      "phone": {
-        "label": "Telefoon / WhatsApp",
-        "placeholder": "Voor het afspreken van de details"
-      },
-      "email": {
-        "label": "E-mail (optioneel)",
-        "placeholder": "Je e-mailadres"
-      },
-      "message": {
-        "label": "Bericht (optioneel)",
-        "placeholder": "Speciale wensen, vragen, etc."
-      },
-      "submit": "Aanvraag versturen",
-      "privacy": "Door te versturen ga je akkoord met de verwerking van je gegevens volgens ons {link}.",
-      "privacyLink": "privacybeleid"
-    }
+  "contactCta": {
+    "sectionTitle": "Direct bereikbaar",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp",
+    "callLabel": "Bellen"
   },
   "thankYou": {
     "title": "Bedankt voor je aanvraag!",
@@ -257,8 +220,7 @@
     "sectionSubtitle": "Pakketten & prijzen",
     "ctaLabel": "Beschikbaarheid aanvragen",
     "whatsappLabel": "WhatsApp",
-    "voucherNote": "Alle pakketten ook beschikbaar als <strong>cadeaubon</strong> (afhalen of per post) · <a href='#anfrage' class='text-sky-600 hover:underline'>Cadeaubon bestellen</a>",
-    "voucherLink": "#anfrage",
+    "voucherNote": "Alle pakketten ook beschikbaar als <strong>cadeaubon</strong> (afhalen of per post)",
     "packages": [
       {
         "category": "Standaard tandemvlucht",

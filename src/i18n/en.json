@@ -21,8 +21,8 @@
     "tagline": "Tandem Paragliding with KOFLY – Come fly with us!",
     "subtitle": "Launch with us from Zettersfeld or Hochstein and enjoy the freedom of flight – front row, feet free, in the stunning mountains of East Tyrol.",
     "ctaPrimary": "Check availability",
-    "ctaSecondary": "Go to booking",
-    "ctaSecondaryNote": "on gleitschirm-tandemflug.com",
+    "ctaPrimaryNote": "on gleitschirm-tandemflug.com",
+    "ctaWhatsapp": "WhatsApp",
     "trustLine": "Certified tandem pilots · KOFLY · Airpark Lienzer Dolomiten"
   },
   "howItWorks": {
@@ -177,49 +177,12 @@
       }
     ]
   },
-  "form": {
-    "sectionTitle": "Check availability",
-    "sectionSubtitle": "Send us your preferred dates – we'll get back to you with a suggestion.",
-    "fields": {
-      "region": {
-        "label": "Where are you staying?",
-        "placeholder": "Select region",
-        "options": {
-          "lienz": "Lienz / East Tyrol",
-          "oberkaernten": "Upper Carinthia",
-          "drautal": "Drau Valley",
-          "moelltal": "Möll Valley",
-          "iseltal": "Isel Valley / Matrei",
-          "kals": "Kals am Großglockner",
-          "defereggental": "Defereggental",
-          "pustertal": "Puster Valley (Sillian, Obertilliach)",
-          "other": "Other region"
-        }
-      },
-      "date": {
-        "label": "Preferred date",
-        "placeholder": "e.g. 15 July or 'next Tuesday'"
-      },
-      "persons": {
-        "label": "Number of people",
-        "placeholder": "How many want to fly?"
-      },
-      "phone": {
-        "label": "Phone / WhatsApp",
-        "placeholder": "So we can arrange the details"
-      },
-      "email": {
-        "label": "Email (optional)",
-        "placeholder": "Your email address"
-      },
-      "message": {
-        "label": "Message (optional)",
-        "placeholder": "Special requests, questions, etc."
-      },
-      "submit": "Send enquiry",
-      "privacy": "By submitting you agree to the processing of your data in accordance with our {link}.",
-      "privacyLink": "privacy policy"
-    }
+  "contactCta": {
+    "sectionTitle": "Get in touch",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "callLabel": "Call"
   },
   "thankYou": {
     "title": "Thank you for your enquiry!",
@@ -257,8 +220,7 @@
     "sectionSubtitle": "Packages & prices",
     "ctaLabel": "Check availability",
     "whatsappLabel": "WhatsApp",
-    "voucherNote": "All packages also available as <strong>voucher</strong> (pick-up or postal delivery) · <a href='#anfrage' class='text-sky-600 hover:underline'>Order voucher</a>",
-    "voucherLink": "#anfrage",
+    "voucherNote": "All packages also available as <strong>voucher</strong> (pick-up or postal delivery)",
     "packages": [
       {
         "category": "Standard tandem flight",

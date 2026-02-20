@@ -15,9 +15,9 @@ export interface Props {
   sectionSubtitle: string;
   packages: PricingPackage[];
   ctaLabel: string;
+  ctaUrl: string;
   whatsappLabel: string;
   voucherNote: string;
-  voucherLink: string;
 }
 
 const {
@@ -25,9 +25,9 @@ const {
   sectionSubtitle,
   packages,
   ctaLabel,
+  ctaUrl,
   whatsappLabel,
   voucherNote,
-  voucherLink,
 } = Astro.props;
 
 const whatsappNumber = siteConfig.contact.whatsapp.replace(/[^0-9]/g, '');
@@ -92,7 +92,9 @@ const whatsappNumber = siteConfig.contact.whatsapp.replace(/[^0-9]/g, '');
 
           {/* CTA */}
           <a
-            href="#anfrage"
+            href={ctaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             class:list={[
               'btn-whimsy block text-center py-3 px-4 rounded-lg font-semibold text-sm transition-all duration-200 mb-2',
               pkg.highlighted
