@@ -21,13 +21,13 @@ function getLocalizedPath(path: string, locale: string): string {
 <div class="flex items-center gap-1 text-sm">
   {localeLinks.map((loc, i) => (
     <>
-      {i > 0 && <span class="text-gray-300 dark:text-gray-600">|</span>}
+      {i > 0 && <span class="text-white/20">|</span>}
       {loc.code === currentLocale ? (
-        <span class="font-semibold text-sky-700">{loc.label}</span>
+        <span class="font-semibold text-sky-400">{loc.label}</span>
       ) : (
         <a
           href={getLocalizedPath(currentPath, loc.code)}
-          class="text-gray-500 hover:text-sky-700 transition-colors"
+          class="text-slate-500 hover:text-sky-400 transition-colors"
         >
           {loc.label}
         </a>

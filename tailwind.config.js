@@ -12,6 +12,11 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        'alpine-900': '#060a18',
+        'alpine-800': '#0a0f1a',
+        'alpine-700': '#0f1629',
+        'alpine-600': '#161d35',
+        'alpine-500': '#1e2746',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
@@ -21,6 +26,7 @@ export default {
 
       animation: {
         fade: 'fadeInUp 1s both',
+        'fade-slow': 'fadeInUp 1.2s both',
       },
 
       keyframes: {

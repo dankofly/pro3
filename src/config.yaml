@@ -37,4 +37,4 @@ analytics:
       id: null
 
 ui:
-  theme: 'light:only'
+  theme: 'dark:only'

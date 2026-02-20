@@ -10,47 +10,47 @@ export interface Props {
 const { sectionTitle, weather, planning, packingList, suitability } = Astro.props;
 ---
 
-<section id="sicherheit" class="py-16 sm:py-20 bg-gray-50">
+<section id="sicherheit" class="py-16 sm:py-20 bg-alpine-700">
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold text-white font-heading text-center mb-12">
       {sectionTitle}
     </h2>
 
     <div class="grid md:grid-cols-2 gap-6">
       {/* Weather & Safety */}
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+      <div class="glass-card p-6 intersect:animate-fade intersect-once">
         <div class="flex items-center gap-2 mb-3">
-          <svg class="w-5 h-5 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-5 h-5 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
           </svg>
-          <h3 class="text-lg font-semibold text-gray-900">{weather.title}</h3>
+          <h3 class="text-lg font-semibold text-white">{weather.title}</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed">{weather.content}</p>
+        <p class="text-slate-400 leading-relaxed">{weather.content}</p>
       </div>
 
       {/* Planning */}
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+      <div class="glass-card p-6 intersect:animate-fade intersect-once">
         <div class="flex items-center gap-2 mb-3">
-          <svg class="w-5 h-5 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-5 h-5 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
-          <h3 class="text-lg font-semibold text-gray-900">{planning.title}</h3>
+          <h3 class="text-lg font-semibold text-white">{planning.title}</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed">{planning.content}</p>
+        <p class="text-slate-400 leading-relaxed">{planning.content}</p>
       </div>
 
       {/* Packing List */}
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+      <div class="glass-card p-6 intersect:animate-fade intersect-once">
         <div class="flex items-center gap-2 mb-3">
-          <svg class="w-5 h-5 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-5 h-5 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
           </svg>
-          <h3 class="text-lg font-semibold text-gray-900">{packingList.title}</h3>
+          <h3 class="text-lg font-semibold text-white">{packingList.title}</h3>
         </div>
         <ul class="space-y-2">
           {packingList.items.map((item) => (
-            <li class="flex items-start gap-2 text-gray-600">
-              <svg class="w-4 h-4 text-sky-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <li class="flex items-start gap-2 text-slate-400">
+              <svg class="w-4 h-4 text-sky-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
               </svg>
               <span class="text-sm">{item}</span>
@@ -60,14 +60,14 @@ const { sectionTitle, weather, planning, packingList, suitability } = Astro.prop
       </div>
 
       {/* Suitability */}
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+      <div class="glass-card p-6 intersect:animate-fade intersect-once">
         <div class="flex items-center gap-2 mb-3">
-          <svg class="w-5 h-5 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="w-5 h-5 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
           </svg>
-          <h3 class="text-lg font-semibold text-gray-900">{suitability.title}</h3>
+          <h3 class="text-lg font-semibold text-white">{suitability.title}</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed">{suitability.content}</p>
+        <p class="text-slate-400 leading-relaxed">{suitability.content}</p>
       </div>
     </div>
   </div>
