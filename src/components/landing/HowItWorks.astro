@@ -1,13 +1,20 @@
 ---
+import SectionBackground from '~/components/common/SectionBackground.astro';
+import type { ImageMetadata } from 'astro';
+
 export interface Props {
   sectionTitle: string;
   steps: Array<{ title: string; description: string }>;
+  backgroundImage?: ImageMetadata;
 }
 
-const { sectionTitle, steps } = Astro.props;
+const { sectionTitle, steps, backgroundImage } = Astro.props;
 ---
 
 <section id="ablauf" class="py-16 sm:py-20 bg-white dark:bg-alpine-800 relative overflow-hidden">
+  {backgroundImage && (
+    <SectionBackground src={backgroundImage} alt="Section background" />
+  )}
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <div class="glow-orb glow-orb-sky w-64 h-64 top-10 right-0 opacity-15"></div>
     <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white font-heading text-center mb-12">

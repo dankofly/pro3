@@ -12,16 +12,19 @@ import SocialProofSection from '~/components/landing/SocialProofSection.astro';
 
 import { t } from '~/i18n/utils';
 import { buildMainSiteUrl, siteConfig } from '~/config/site';
+import { loadSectionImages } from '~/config/section-images';
 
 const locale = 'de';
 const dict = t(locale);
 const ctaUrl = buildMainSiteUrl('cta-primary', locale);
 const whatsappNumber = siteConfig.contact.whatsapp.replace(/[^0-9]/g, '');
 const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+const sectionImages = await loadSectionImages();
 ---
 
 <LandingPageLayout locale={locale} currentPath="/de/" dict={dict} ctaUrl={ctaUrl} whatsappUrl={whatsappUrl} faqItems={dict.faq.items}>
   <HeroSection
+    backgroundImage={sectionImages.hero}
     title={dict.hero.title}
     tagline={dict.hero.tagline}
     subtitle={dict.hero.subtitle}
@@ -33,14 +36,16 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`;
     trustLine={dict.hero.trustLine}
   />
 
-  <SocialProofSection platforms={dict.socialProof.platforms} />
+  <SocialProofSection backgroundImage={sectionImages.socialProof} platforms={dict.socialProof.platforms} />
 
   <HowItWorks
+    backgroundImage={sectionImages.howItWorks}
     sectionTitle={dict.howItWorks.sectionTitle}
     steps={dict.howItWorks.steps}
   />
 
   <LaunchSites
+    backgroundImage={sectionImages.launchSites}
     sectionTitle={dict.launchSites.sectionTitle}
     intro={dict.launchSites.intro}
     sites={dict.launchSites.sites}
@@ -48,6 +53,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   />
 
   <PricingSection
+    backgroundImage={sectionImages.pricing}
     sectionTitle={dict.pricing.sectionTitle}
     sectionSubtitle={dict.pricing.sectionSubtitle}
     packages={dict.pricing.packages}
@@ -58,6 +64,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   />
 
   <RegionModules
+    backgroundImage={sectionImages.regions}
     sectionTitle={dict.regions.sectionTitle}
     sectionSubtitle={dict.regions.sectionSubtitle}
     regions={dict.regions.items}
@@ -66,6 +73,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   />
 
   <SafetySection
+    backgroundImage={sectionImages.safety}
     sectionTitle={dict.safety.sectionTitle}
     weather={dict.safety.weather}
     planning={dict.safety.planning}
@@ -74,11 +82,13 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   />
 
   <FAQSection
+    backgroundImage={sectionImages.faq}
     sectionTitle={dict.faq.sectionTitle}
     items={dict.faq.items}
   />
 
   <ContactCTA
+    backgroundImage={sectionImages.contact}
     sectionTitle={dict.contactCta.sectionTitle}
     phoneLabel={dict.contactCta.phoneLabel}
     emailLabel={dict.contactCta.emailLabel}

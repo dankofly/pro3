@@ -1,16 +1,23 @@
 ---
+import SectionBackground from '~/components/common/SectionBackground.astro';
+import type { ImageMetadata } from 'astro';
+
 export interface Props {
   sectionTitle: string;
   sectionSubtitle: string;
   regions: Array<{ id: string; name: string; content: string }>;
   ctaLabel: string;
   ctaUrl: string;
+  backgroundImage?: ImageMetadata;
 }
 
-const { sectionTitle, sectionSubtitle, regions, ctaLabel, ctaUrl } = Astro.props;
+const { sectionTitle, sectionSubtitle, regions, ctaLabel, ctaUrl, backgroundImage } = Astro.props;
 ---
 
-<section id="regionen" class="py-16 sm:py-20 bg-stone-50 dark:bg-alpine-800">
+<section id="regionen" class="relative py-16 sm:py-20 bg-stone-50 dark:bg-alpine-800">
+  {backgroundImage && (
+    <SectionBackground src={backgroundImage} alt="Section background" />
+  )}
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white font-heading text-center mb-3">
       {sectionTitle}

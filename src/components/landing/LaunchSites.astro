@@ -1,15 +1,22 @@
 ---
+import SectionBackground from '~/components/common/SectionBackground.astro';
+import type { ImageMetadata } from 'astro';
+
 export interface Props {
   sectionTitle: string;
   intro: string;
   sites: Array<{ name: string; description: string }>;
   weatherNote: string;
+  backgroundImage?: ImageMetadata;
 }
 
-const { sectionTitle, intro, sites, weatherNote } = Astro.props;
+const { sectionTitle, intro, sites, weatherNote, backgroundImage } = Astro.props;
 ---
 
-<section id="startplaetze" class="py-16 sm:py-20 bg-stone-50 dark:bg-alpine-700">
+<section id="startplaetze" class="relative py-16 sm:py-20 bg-stone-50 dark:bg-alpine-700">
+  {backgroundImage && (
+    <SectionBackground src={backgroundImage} alt="Section background" />
+  )}
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white font-heading text-center mb-4">
       {sectionTitle}

@@ -1,4 +1,7 @@
 ---
+import SectionBackground from '~/components/common/SectionBackground.astro';
+import type { ImageMetadata } from 'astro';
+
 export interface ReviewPlatform {
   platform: 'google' | 'tripadvisor';
   rating: string;
@@ -9,12 +12,16 @@ export interface ReviewPlatform {
 
 export interface Props {
   platforms: ReviewPlatform[];
+  backgroundImage?: ImageMetadata;
 }
 
-const { platforms } = Astro.props;
+const { platforms, backgroundImage } = Astro.props;
 ---
 
-<section class="py-6 sm:py-8 bg-stone-50/50 dark:bg-[#0f1629]/50 border-b border-gray-200/40 dark:border-white/[0.04]">
+<section class="py-6 sm:py-8 bg-stone-50/50 dark:bg-[#0f1629]/50 border-b border-gray-200/40 dark:border-white/[0.04] relative">
+  {backgroundImage && (
+    <SectionBackground src={backgroundImage} alt="Section background" />
+  )}
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
     <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
       {platforms.map((p) => (

@@ -3,26 +3,358 @@ backend:
   branch: main
 
 media_folder: 'src/assets/images'
-public_folder: '/_astro'
+public_folder: '~/assets/images'
 
 collections:
+  # ── Section Background Images ──────────────────────────────────
+  - name: 'section-images'
+    label: 'Sektionsbilder'
+    description: 'Hintergrundbilder für alle Landing-Page Sektionen'
+    files:
+      - name: 'images'
+        label: 'Bilder verwalten'
+        file: 'src/data/section-images.json'
+        fields:
+          - label: 'Hero Hintergrund'
+            name: 'hero'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1920×1080px | JPG/PNG (→ WebP) | Querformat, Berg/Himmel/Flug'
+          - label: 'Startplätze Hintergrund'
+            name: 'launchSites'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×900px | JPG/PNG (→ WebP) | Panorama Startplätze'
+          - label: 'Regionen Hintergrund'
+            name: 'regions'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×900px | JPG/PNG (→ WebP) | Landschaft Osttirol'
+          - label: 'Sicherheit Hintergrund'
+            name: 'safety'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×900px | JPG/PNG (→ WebP) | Ausrüstung/Vorbereitung'
+          - label: 'Preise Hintergrund'
+            name: 'pricing'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×900px | JPG/PNG (→ WebP) | Dezente Flugszene'
+          - label: 'Ablauf Hintergrund'
+            name: 'howItWorks'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×900px | JPG/PNG (→ WebP) | Start/Landung Impression'
+          - label: 'FAQ Hintergrund'
+            name: 'faq'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×900px | JPG/PNG (→ WebP) | Atmosphärisch'
+          - label: 'Kontakt Hintergrund'
+            name: 'contact'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×800px | JPG/PNG (→ WebP) | Einladend, Team'
+          - label: 'Bewertungen Hintergrund'
+            name: 'socialProof'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1600×400px | JPG/PNG (→ WebP) | Stimmungsstreifen'
+
+  # ── Page Content (i18n) ────────────────────────────────────────
+  - name: 'content'
+    label: 'Seiteninhalt'
+    description: 'Alle Texte und SEO-Daten pro Sprache bearbeiten'
+    files:
+      - name: 'content-de'
+        label: 'Deutsch'
+        file: 'src/i18n/de.json'
+        fields: &content_fields
+          # ── SEO / Meta ──
+          - label: 'SEO / Meta'
+            name: 'meta'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Seitentitel (Browser-Tab)', name: 'title', widget: 'string', hint: 'Erscheint im Browser-Tab und in Google-Suchergebnissen (50-60 Zeichen ideal)' }
+              - { label: 'Meta-Beschreibung', name: 'description', widget: 'text', hint: 'Google-Snippet unter dem Titel (120-160 Zeichen ideal)' }
+              - { label: 'OG Titel (Social Media)', name: 'ogTitle', widget: 'string', hint: 'Titel beim Teilen auf Facebook/WhatsApp' }
+              - { label: 'OG Beschreibung (Social Media)', name: 'ogDescription', widget: 'text', hint: 'Beschreibung beim Teilen auf Facebook/WhatsApp' }
+
+          # ── Navigation ──
+          - label: 'Navigation'
+            name: 'nav'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Start', name: 'home', widget: 'string' }
+              - { label: 'Ablauf', name: 'howItWorks', widget: 'string' }
+              - { label: 'Startplätze', name: 'launchSites', widget: 'string' }
+              - { label: 'Regionen', name: 'regions', widget: 'string' }
+              - { label: 'FAQ', name: 'faq', widget: 'string' }
+              - { label: 'Pakete', name: 'packages', widget: 'string' }
+              - { label: 'Kontakt', name: 'contact', widget: 'string' }
+              - { label: 'Jetzt buchen', name: 'bookNow', widget: 'string' }
+              - { label: 'Verfügbarkeit anfragen', name: 'requestAvailability', widget: 'string' }
+
+          # ── Hero Section ──
+          - label: 'Hero (Startbereich)'
+            name: 'hero'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Überschrift (H1)', name: 'title', widget: 'string', hint: 'Haupt-Überschrift der Seite – wichtig für SEO' }
+              - { label: 'Tagline', name: 'tagline', widget: 'string', hint: 'Kurzer Slogan unter der Überschrift' }
+              - { label: 'Untertitel', name: 'subtitle', widget: 'text', hint: 'Beschreibender Text unter der Tagline' }
+              - { label: 'CTA Button Text', name: 'ctaPrimary', widget: 'string' }
+              - { label: 'CTA Button Hinweis', name: 'ctaPrimaryNote', widget: 'string', hint: 'Kleiner Text unter dem Button' }
+              - { label: 'WhatsApp Button Text', name: 'ctaWhatsapp', widget: 'string' }
+              - { label: 'Trust-Zeile', name: 'trustLine', widget: 'string', hint: 'Vertrauens-Indikatoren unter den Buttons' }
+
+          # ── How It Works ──
+          - label: 'Ablauf'
+            name: 'howItWorks'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - label: 'Schritte'
+                name: 'steps'
+                widget: 'list'
+                fields:
+                  - { label: 'Titel', name: 'title', widget: 'string' }
+                  - { label: 'Beschreibung', name: 'description', widget: 'text' }
+
+          # ── Launch Sites ──
+          - label: 'Startplätze'
+            name: 'launchSites'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - { label: 'Einleitungstext', name: 'intro', widget: 'text' }
+              - label: 'Startplätze'
+                name: 'sites'
+                widget: 'list'
+                fields:
+                  - { label: 'Name', name: 'name', widget: 'string' }
+                  - { label: 'Beschreibung', name: 'description', widget: 'text' }
+              - { label: 'Wetter-Hinweis', name: 'weatherNote', widget: 'text' }
+
+          # ── Pricing ──
+          - label: 'Preise & Pakete'
+            name: 'pricing'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - { label: 'Untertitel', name: 'sectionSubtitle', widget: 'string' }
+              - { label: 'CTA Button Text', name: 'ctaLabel', widget: 'string' }
+              - { label: 'WhatsApp Button Text', name: 'whatsappLabel', widget: 'string' }
+              - { label: 'Gutschein-Hinweis (HTML erlaubt)', name: 'voucherNote', widget: 'string' }
+              - label: 'Pakete'
+                name: 'packages'
+                widget: 'list'
+                fields:
+                  - { label: 'Kategorie', name: 'category', widget: 'string' }
+                  - { label: 'Paketname', name: 'name', widget: 'string' }
+                  - { label: 'Preis', name: 'price', widget: 'string', hint: 'z.B. €150' }
+                  - { label: 'Preis-Präfix', name: 'pricePrefix', widget: 'string', required: false, hint: 'z.B. "ab" – wird vor dem Preis angezeigt' }
+                  - label: 'Leistungen'
+                    name: 'features'
+                    widget: 'list'
+                    field: { label: 'Leistung', name: 'feature', widget: 'string' }
+                  - { label: 'Hervorgehoben?', name: 'highlighted', widget: 'boolean', default: false }
+
+          # ── Regions ──
+          - label: 'Regionen'
+            name: 'regions'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - { label: 'Untertitel', name: 'sectionSubtitle', widget: 'string' }
+              - label: 'Regionen'
+                name: 'items'
+                widget: 'list'
+                fields:
+                  - { label: 'ID (URL-freundlich)', name: 'id', widget: 'string', hint: 'Kleinbuchstaben ohne Leerzeichen, z.B. "lienz"' }
+                  - { label: 'Name', name: 'name', widget: 'string' }
+                  - { label: 'Inhalt', name: 'content', widget: 'text' }
+
+          # ── Safety ──
+          - label: 'Sicherheit & Vorbereitung'
+            name: 'safety'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - label: 'Wetter & Sicherheit'
+                name: 'weather'
+                widget: 'object'
+                fields:
+                  - { label: 'Titel', name: 'title', widget: 'string' }
+                  - { label: 'Inhalt', name: 'content', widget: 'text' }
+              - label: 'Wetter-Planung'
+                name: 'planning'
+                widget: 'object'
+                fields:
+                  - { label: 'Titel', name: 'title', widget: 'string' }
+                  - { label: 'Inhalt', name: 'content', widget: 'text' }
+              - label: 'Packliste'
+                name: 'packingList'
+                widget: 'object'
+                fields:
+                  - { label: 'Titel', name: 'title', widget: 'string' }
+                  - label: 'Einträge'
+                    name: 'items'
+                    widget: 'list'
+                    field: { label: 'Eintrag', name: 'item', widget: 'string' }
+              - label: 'Eignung'
+                name: 'suitability'
+                widget: 'object'
+                fields:
+                  - { label: 'Titel', name: 'title', widget: 'string' }
+                  - { label: 'Inhalt', name: 'content', widget: 'text' }
+
+          # ── FAQ ──
+          - label: 'FAQ'
+            name: 'faq'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - label: 'Fragen & Antworten'
+                name: 'items'
+                widget: 'list'
+                fields:
+                  - { label: 'Frage', name: 'question', widget: 'string' }
+                  - { label: 'Antwort', name: 'answer', widget: 'text' }
+
+          # ── Contact CTA ──
+          - label: 'Kontakt-Bereich'
+            name: 'contactCta'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
+              - { label: 'Telefon Label', name: 'phoneLabel', widget: 'string' }
+              - { label: 'E-Mail Label', name: 'emailLabel', widget: 'string' }
+              - { label: 'WhatsApp Label', name: 'whatsappLabel', widget: 'string' }
+              - { label: 'Anrufen Label', name: 'callLabel', widget: 'string' }
+
+          # ── Social Proof ──
+          - label: 'Bewertungen'
+            name: 'socialProof'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - label: 'Plattformen'
+                name: 'platforms'
+                widget: 'list'
+                fields:
+                  - { label: 'Plattform', name: 'platform', widget: 'select', options: ['google', 'tripadvisor'] }
+                  - { label: 'Bewertung', name: 'rating', widget: 'string', hint: 'z.B. 5.0' }
+                  - { label: 'Anzahl Bewertungen', name: 'reviewCount', widget: 'string' }
+                  - { label: 'Label-Text', name: 'label', widget: 'string', hint: 'z.B. "128 Bewertungen auf Google"' }
+                  - { label: 'URL zur Bewertungsseite', name: 'url', widget: 'string' }
+
+          # ── Thank You Page ──
+          - label: 'Danke-Seite'
+            name: 'thankYou'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Titel', name: 'title', widget: 'string' }
+              - { label: 'Nachricht', name: 'message', widget: 'text' }
+              - { label: 'Nächste Schritte Titel', name: 'nextSteps', widget: 'string' }
+              - label: 'Schritte'
+                name: 'steps'
+                widget: 'list'
+                field: { label: 'Schritt', name: 'step', widget: 'string' }
+              - { label: 'CTA Hauptseite', name: 'ctaMain', widget: 'string' }
+              - { label: 'CTA Zurück', name: 'ctaBack', widget: 'string' }
+
+          # ── Footer ──
+          - label: 'Footer'
+            name: 'footer'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Tagline', name: 'tagline', widget: 'string' }
+              - label: 'Navigation'
+                name: 'nav'
+                widget: 'object'
+                fields:
+                  - { label: 'Impressum', name: 'imprint', widget: 'string' }
+                  - { label: 'Datenschutz', name: 'privacy', widget: 'string' }
+                  - { label: 'Hauptseite', name: 'mainSite', widget: 'string' }
+              - { label: 'Copyright', name: 'copyright', widget: 'string', hint: 'Verwende {year} als Platzhalter für das aktuelle Jahr' }
+
+          # ── Sticky Mobile Bar ──
+          - label: 'Mobile-Leiste'
+            name: 'stickyBar'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Anrufen', name: 'call', widget: 'string' }
+              - { label: 'WhatsApp', name: 'whatsapp', widget: 'string' }
+              - { label: 'Anfrage', name: 'request', widget: 'string' }
+
+          # ── Language Switch ──
+          - label: 'Sprachauswahl'
+            name: 'langSwitch'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Deutsch', name: 'de', widget: 'string' }
+              - { label: 'English', name: 'en', widget: 'string' }
+              - { label: 'Nederlands', name: 'nl', widget: 'string' }
+
+          # ── Legal ──
+          - label: 'Rechtliches'
+            name: 'legal'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Impressum Titel', name: 'impressumTitle', widget: 'string' }
+              - { label: 'Datenschutz Titel', name: 'privacyTitle', widget: 'string' }
+
+      - name: 'content-en'
+        label: 'English'
+        file: 'src/i18n/en.json'
+        fields: *content_fields
+
+      - name: 'content-nl'
+        label: 'Nederlands'
+        file: 'src/i18n/nl.json'
+        fields: *content_fields
+
+  # ── Blog Posts ─────────────────────────────────────────────────
   - name: 'post'
-    label: 'Post'
+    label: 'Blog Posts'
     folder: 'src/content/post'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string' }
-      - {
-          label: 'Tags',
-          name: 'tags',
-          widget: 'list',
-          allow_add: true,
-          allow_delete: true,
-          collapsed: false,
-          field: { label: 'Tag', name: 'tag', widget: 'string' },
-        }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        allow_add: true
+        allow_delete: true
+        collapsed: false
+        field: { label: 'Tag', name: 'tag', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'string' }
       - { label: 'Publish Date', name: 'publishDate', widget: 'datetime', required: false }
       - { label: 'Author', name: 'author', widget: 'string' }
