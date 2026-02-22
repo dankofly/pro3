@@ -68,6 +68,7 @@
   "regions": {
     "sectionTitle": "Tandem flight – wherever you're staying in the region",
     "sectionSubtitle": "Our launch sites in Lienz are easily reachable from across the region.",
+    "routeLabel": "Plan your route",
     "items": [
       {
         "id": "lienz",

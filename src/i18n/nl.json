@@ -68,6 +68,7 @@
   "regions": {
     "sectionTitle": "Tandemvlucht – waar je ook logeert in de regio",
     "sectionSubtitle": "Onze startplaatsen in Lienz zijn vanuit de hele regio goed bereikbaar.",
+    "routeLabel": "Route plannen",
     "items": [
       {
         "id": "lienz",

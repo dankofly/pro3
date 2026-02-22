@@ -68,8 +68,8 @@ const sectionImages = await loadSectionImages();
     sectionTitle={dict.regions.sectionTitle}
     sectionSubtitle={dict.regions.sectionSubtitle}
     regions={dict.regions.items}
-    ctaLabel={dict.nav.requestAvailability}
-    ctaUrl={ctaUrl}
+    ctaLabel={dict.regions.routeLabel}
+    ctaUrl={siteConfig.mapsUrl}
   />
 
   <SafetySection

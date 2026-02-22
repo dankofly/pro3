@@ -68,6 +68,7 @@
   "regions": {
     "sectionTitle": "Tandemflug – egal wo in der Region du Urlaub machst",
     "sectionSubtitle": "Unsere Startplätze in Lienz sind aus der gesamten Region gut erreichbar.",
+    "routeLabel": "Route planen",
     "items": [
       {
         "id": "lienz",

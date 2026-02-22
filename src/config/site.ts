@@ -44,6 +44,9 @@ export const siteConfig = {
     registerNumber: '',
   },
 
+  /** Google Maps directions link */
+  mapsUrl: 'https://maps.app.goo.gl/ywpKPXwKkuotoU5BA',
+
   /** Social media links */
   social: {
     instagram: 'https://www.instagram.com/tandemfluglienz/',
