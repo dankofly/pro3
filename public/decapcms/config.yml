@@ -183,6 +183,7 @@ collections:
             fields:
               - { label: 'Sektions-Titel', name: 'sectionTitle', widget: 'string' }
               - { label: 'Untertitel', name: 'sectionSubtitle', widget: 'string' }
+              - { label: 'Route-Link Text', name: 'routeLabel', widget: 'string', hint: 'Text für den Google Maps Link in jeder Regionskarte, z.B. "Route planen"' }
               - label: 'Regionen'
                 name: 'items'
                 widget: 'list'
