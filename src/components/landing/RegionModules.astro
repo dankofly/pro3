@@ -14,7 +14,7 @@ export interface Props {
 const { sectionTitle, sectionSubtitle, regions, ctaLabel, ctaUrl, backgroundImage } = Astro.props;
 ---
 
-<section id="regionen" class="relative py-16 sm:py-20 bg-stone-50 dark:bg-alpine-800">
+<section id="regionen" class:list={["relative py-16 sm:py-20", backgroundImage ? "" : "bg-stone-50 dark:bg-alpine-800"]}>
   {backgroundImage && (
     <SectionBackground src={backgroundImage} alt="Section background" />
   )}

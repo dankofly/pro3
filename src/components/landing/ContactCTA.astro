@@ -19,7 +19,7 @@ const email = siteConfig.contact.email;
 const whatsappNumber = siteConfig.contact.whatsapp.replace(/[^0-9]/g, '');
 ---
 
-<section id="kontakt" class="py-16 sm:py-20 bg-gradient-to-b from-stone-50 to-white dark:from-alpine-700 dark:to-alpine-800 relative overflow-hidden">
+<section id="kontakt" class:list={["py-16 sm:py-20 relative overflow-hidden", backgroundImage ? "" : "bg-gradient-to-b from-stone-50 to-white dark:from-alpine-700 dark:to-alpine-800"]}>
   {backgroundImage && (
     <SectionBackground src={backgroundImage} alt="Section background" />
   )}

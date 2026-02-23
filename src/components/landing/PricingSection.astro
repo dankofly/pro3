@@ -37,7 +37,7 @@ const {
 const whatsappNumber = siteConfig.contact.whatsapp.replace(/[^0-9]/g, '');
 ---
 
-<section id="pakete" class="py-16 sm:py-20 bg-white dark:bg-alpine-800 relative overflow-hidden">
+<section id="pakete" class:list={["py-16 sm:py-20 relative overflow-hidden", backgroundImage ? "" : "bg-white dark:bg-alpine-800"]}>
   {backgroundImage && (
     <SectionBackground src={backgroundImage} alt="Section background" />
   )}

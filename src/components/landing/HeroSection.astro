@@ -29,7 +29,7 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative min-h-[85vh] flex items-center justify-center bg-gradient-to-b from-white via-stone-50 to-stone-100 dark:from-[#060a18] dark:via-[#0a0f1a] dark:to-[#0f1629] overflow-hidden">
+<section class:list={["relative min-h-[85vh] flex items-center justify-center overflow-hidden", backgroundImage ? "" : "bg-gradient-to-b from-white via-stone-50 to-stone-100 dark:from-[#060a18] dark:via-[#0a0f1a] dark:to-[#0f1629]"]}>
   {backgroundImage && (
     <SectionBackground src={backgroundImage} alt="Tandemflug Paragliding" loading="eager" />
   )}

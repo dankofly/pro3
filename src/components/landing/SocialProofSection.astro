@@ -27,7 +27,7 @@ const google = platforms.find((p) => p.platform === 'google');
 const tripadvisor = platforms.find((p) => p.platform === 'tripadvisor');
 ---
 
-<section class="py-12 sm:py-16 bg-stone-50/50 dark:bg-[#0f1629]/50 border-b border-gray-200/40 dark:border-white/[0.04] relative overflow-hidden">
+<section class:list={["py-12 sm:py-16 border-b border-gray-200/40 dark:border-white/[0.04] relative overflow-hidden", backgroundImage ? "" : "bg-stone-50/50 dark:bg-[#0f1629]/50"]}>
   {backgroundImage && (
     <SectionBackground src={backgroundImage} alt="Section background" />
   )}

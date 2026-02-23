@@ -11,7 +11,7 @@ export interface Props {
 const { sectionTitle, steps, backgroundImage } = Astro.props;
 ---
 
-<section id="ablauf" class="py-16 sm:py-20 bg-white dark:bg-alpine-800 relative overflow-hidden">
+<section id="ablauf" class:list={["py-16 sm:py-20 relative overflow-hidden", backgroundImage ? "" : "bg-white dark:bg-alpine-800"]}>
   {backgroundImage && (
     <SectionBackground src={backgroundImage} alt="Section background" />
   )}
