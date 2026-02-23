@@ -1,0 +1,43 @@
+name: Auto-translate i18n
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/i18n/de.json']
+
+jobs:
+  translate:
+    # Skip if the commit was made by this action (prevent loops)
+    if: "!contains(github.event.head_commit.message, '[auto-translate]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Anthropic SDK
+        run: npm install @anthropic-ai/sdk
+
+      - name: Translate DE → EN + NL
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/translate.mjs
+
+      - name: Commit translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/i18n/en.json src/i18n/nl.json
+          if git diff --cached --quiet; then
+            echo "No translation changes detected"
+          else
+            git commit -m "Auto-translate EN + NL from DE [auto-translate]"
+            git push
+          fi
