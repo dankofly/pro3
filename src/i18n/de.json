@@ -199,16 +199,38 @@
       {
         "platform": "google",
         "rating": "5.0",
-        "reviewCount": "TODO",
-        "label": "TODO Bewertungen auf Google",
+        "reviewCount": "40",
+        "label": "40 Bewertungen auf Google",
         "url": "https://share.google/6fbv9dtNTP33owE9c"
       },
       {
         "platform": "tripadvisor",
         "rating": "5.0",
-        "reviewCount": "TODO",
-        "label": "TODO Bewertungen auf Tripadvisor",
+        "reviewCount": "244",
+        "label": "244 Bewertungen auf Tripadvisor",
         "url": "https://www.tripadvisor.at/Attraction_Review-g230011-d8720066-Reviews-Gleitschirm_Tandemflug_com-Lienz_Tirol_Austrian_Alps.html"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Daniel und René sind großartige Fluglehrer, die jedes Detail erklären und ihre Begeisterung vermitteln!",
+        "author": "TripAdvisor-Gast",
+        "source": "TripAdvisor"
+      },
+      {
+        "text": "Dieses wunderbare Erlebnis wurde von Anfang bis Ende sehr professionell und sehr freundlich auf unsere Bedürfnisse zugeschnitten.",
+        "author": "TripAdvisor-Gast",
+        "source": "TripAdvisor"
+      },
+      {
+        "text": "Hervorragende Betreuung, super sympathisch. Jederzeit wieder. Absolut empfehlenswert.",
+        "author": "TripAdvisor-Gast",
+        "source": "TripAdvisor"
+      },
+      {
+        "text": "Ich und meine Kinder hatten ein Erlebnis fürs Leben – wir werden das nie vergessen. Das Team legt großen Wert auf Sicherheit.",
+        "author": "TripAdvisor-Gast",
+        "source": "TripAdvisor"
       }
     ]
   },

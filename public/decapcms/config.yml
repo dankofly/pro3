@@ -269,6 +269,13 @@ collections:
                   - { label: 'Anzahl Bewertungen', name: 'reviewCount', widget: 'string' }
                   - { label: 'Label-Text', name: 'label', widget: 'string', hint: 'z.B. "128 Bewertungen auf Google"' }
                   - { label: 'URL zur Bewertungsseite', name: 'url', widget: 'string' }
+              - label: 'Kunden-Zitate (Karussell)'
+                name: 'reviews'
+                widget: 'list'
+                fields:
+                  - { label: 'Zitat', name: 'text', widget: 'text' }
+                  - { label: 'Autor', name: 'author', widget: 'string', hint: 'z.B. "TripAdvisor-Gast"' }
+                  - { label: 'Quelle', name: 'source', widget: 'string', hint: 'z.B. "TripAdvisor" oder "Google"' }
 
           # ── Thank You Page ──
           - label: 'Danke-Seite'

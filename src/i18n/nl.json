@@ -279,16 +279,38 @@
       {
         "platform": "google",
         "rating": "5.0",
-        "reviewCount": "TODO",
-        "label": "TODO beoordelingen op Google",
+        "reviewCount": "40",
+        "label": "40 beoordelingen op Google",
         "url": "https://share.google/6fbv9dtNTP33owE9c"
       },
       {
         "platform": "tripadvisor",
         "rating": "5.0",
-        "reviewCount": "TODO",
-        "label": "TODO beoordelingen op Tripadvisor",
+        "reviewCount": "244",
+        "label": "244 beoordelingen op Tripadvisor",
         "url": "https://www.tripadvisor.at/Attraction_Review-g230011-d8720066-Reviews-Gleitschirm_Tandemflug_com-Lienz_Tirol_Austrian_Alps.html"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Daniel en René zijn geweldige instructeurs die graag elk detail uitleggen en hun enthousiasme weten over te brengen!",
+        "author": "TripAdvisor-gast",
+        "source": "TripAdvisor"
+      },
+      {
+        "text": "Deze prachtige ervaring was van begin tot eind zeer professioneel en vriendelijk op onze wensen afgestemd.",
+        "author": "TripAdvisor-gast",
+        "source": "TripAdvisor"
+      },
+      {
+        "text": "Uitstekende begeleiding, super sympathiek. Zou het zo weer doen. Absoluut aan te raden.",
+        "author": "TripAdvisor-gast",
+        "source": "TripAdvisor"
+      },
+      {
+        "text": "Ik en mijn kinderen hadden een ervaring voor het leven – we zullen dit nooit vergeten. Het team hecht veel waarde aan veiligheid.",
+        "author": "TripAdvisor-gast",
+        "source": "TripAdvisor"
       }
     ]
   },
