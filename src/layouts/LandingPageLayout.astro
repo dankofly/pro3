@@ -77,5 +77,23 @@ const { locale, currentPath, dict, ctaUrl, whatsappUrl, faqItems } = Astro.props
     )}
 
     <BasicScripts />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script is:inline>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', function (user) {
+          if (!user) {
+            window.netlifyIdentity.on('login', function () {
+              document.location.href = '/decapcms/';
+            });
+          }
+        });
+      }
+      // Redirect confirmation tokens to the admin panel
+      if (window.location.hash.includes('confirmation_token') ||
+          window.location.hash.includes('invite_token') ||
+          window.location.hash.includes('recovery_token')) {
+        window.location.href = '/decapcms/' + window.location.hash;
+      }
+    </script>
   </body>
 </html>
