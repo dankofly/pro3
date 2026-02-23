@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+site_url: https://dynamic-meerkat-7b69e7.netlify.app
 
 media_folder: 'src/assets/images'
 public_folder: '~/assets/images'
