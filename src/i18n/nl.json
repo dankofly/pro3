@@ -20,6 +20,7 @@
     "title": "Tandemvlucht in het Airpark Lienzer Dolomiten",
     "tagline": "Tandem paragliden met KOFLY – Vlieg mee!",
     "subtitle": "Start vanaf Zettersfeld op 2.220m of Hochstein en zweef 20–30 minuten boven het Draudal. Gecertificeerde tandempiloten, 5.0/5 sterren bij 284 beoordelingen. Vanaf €150.",
+    "definition": "Een tandemvlucht is een paragliding-vlucht met z'n tweeën: je zit voor een gecertificeerde piloot in het tuig en zweeft 20 tot 30 minuten boven de Lienzer vallei en de Dolomieten – zonder enige ervaring. KOFLY, gerund door Daniel Kofler (paragliding-piloot sinds 1999, meer dan 5.000 vlieguren), vertrekt vanaf Zettersfeld op 2.220 meter of Hochstein op 2.057 meter in het Airpark Lienzer Dolomiten. De landing is een zachte touchdown in het dal bij Nussdorf-Debant. Er zijn vier pakketten: Classic (€150), Classic met media (€170), Premium (€190) en XXL thermiekvluchten vanaf €250 met meer dan een uur vliegtijd. Met 284 beoordelingen en een 5,0-sterren-beoordeling op Google en TripAdvisor is KOFLY een van de best beoordeelde tandemvlucht-aanbieders in Oost-Tirol. Alle vluchten zijn ook beschikbaar als cadeaubon.",
     "ctaPrimary": "Beschikbaarheid aanvragen",
     "ctaPrimaryNote": "op gleitschirm-tandemflug.com",
     "ctaWhatsapp": "WhatsApp",
@@ -112,6 +113,15 @@
       }
     ]
   },
+  "pilot": {
+    "sectionTitle": "Jouw Piloot",
+    "name": "Daniel Kofler",
+    "credentials": "Gecertificeerd tandempiloot · Speedflying-pionier · 5.000+ vlieguren",
+    "bio": "Daniel vliegt sinds 1999 paragliders en is sinds 2007 tandempiloot in het Airpark Lienzer Dolomiten. Als een van Oostenrijks eerste speedflying-piloten en voormalig testpiloot voor Swing Paragliders kent hij elke luchtstroom boven het Lienzer dal. Zijn doel: jou een veilige, onvergetelijke vliegervaring geven – met de ervaring van meer dan 5.000 vlieguren.",
+    "experience": "Piloot sinds 1999",
+    "flights": "5.000+ vlieguren",
+    "rating": "5.0/5 sterren"
+  },
   "safety": {
     "sectionTitle": "Weer, veiligheid & wat meenemen",
     "weather": {
@@ -141,40 +151,44 @@
     "sectionTitle": "Veelgestelde vragen",
     "items": [
       {
-        "question": "Hoe lang duurt de vlucht?",
-        "answer": "Meestal ~20–30 minuten. De precieze duur hangt af van de thermische omstandigheden en het weer."
+        "question": "Hoe lang duurt een tandemvlucht in Lienz?",
+        "answer": "Een tandemvlucht bij KOFLY duurt doorgaans 20 tot 30 minuten. De precieze duur hangt af van de thermische omstandigheden en de wind. Met het XXL-thermiekpakket zijn vluchten van meer dan een uur mogelijk."
       },
       {
-        "question": "Heb ik ervaring nodig?",
-        "answer": "Nee. Je vliegt met een gecertificeerde tandempiloot die alles bestuurt. Je hoeft alleen bij de start een paar stappen mee te rennen."
+        "question": "Heb ik ervaring nodig om te paragliden?",
+        "answer": "Nee, je hebt helemaal geen ervaring nodig. Je vliegt met een gecertificeerde tandempiloot die alles bestuurt. Je hoeft alleen bij de start een paar stappen bergaf mee te rennen – de piloot doet de rest."
       },
       {
-        "question": "Wat moet ik aantrekken?",
-        "answer": "Stevige schoenen (wandelschoenen ideaal), lange broek, jas. Het kan boven een stuk kouder zijn dan in het dal."
+        "question": "Wat moet ik aantrekken voor een tandemvlucht?",
+        "answer": "Stevige schoenen (wandelschoenen ideaal, geen sandalen), lange broek en een jas of fleece. Op 2.220m bij het Zettersfeld is het een stuk kouder dan in het dal. We raden ook een zonnebril en zonnebescherming aan."
       },
       {
-        "question": "Kunnen kinderen meevliegen?",
-        "answer": "In principe wel. Belangrijk is dat ze de instructies van de piloot kunnen begrijpen en opvolgen."
+        "question": "Vanaf welke leeftijd kunnen kinderen tandemvliegen?",
+        "answer": "Er is geen vaste minimumleeftijd. Belangrijk is dat het kind de instructies van de piloot kan begrijpen en bij de start zelfstandig een paar stappen kan meelopen. In onze ervaring lukt dit prima vanaf ongeveer 5–6 jaar."
       },
       {
-        "question": "Wat als het weer slecht is?",
-        "answer": "Veiligheid gaat voor. Als de omstandigheden niet goed zijn, plannen we de vlucht opnieuw in. Daarom nemen we vooraf contact op om het beste moment te vinden."
+        "question": "Wat gebeurt er bij slecht weer?",
+        "answer": "Veiligheid gaat altijd voor. Als de weersomstandigheden niet geschikt zijn, plannen we je vlucht gratis om naar de eerstvolgende geschikte datum. Daarom nemen we vooraf contact op om samen het optimale moment te vinden."
       },
       {
-        "question": "Waar spreken we af?",
-        "answer": "Het exacte trefpunt bepalen we op basis van weer en startplaats. Meestal spreken we af bij het dalstation of bij de landingszones."
+        "question": "Waar is het trefpunt voor de tandemvlucht?",
+        "answer": "Het exacte trefpunt bepalen we op basis van het weer en de gekozen startplaats (Zettersfeld of Hochstein). Meestal spreken we af bij het dalstation of bij onze landingszones bij Nussdorf-Debant."
       },
       {
-        "question": "Zijn er foto's en video's?",
-        "answer": "Ja, foto- en video-opnames van je vlucht zijn mogelijk. Details bespreken we bij de boeking."
+        "question": "Zijn er foto's en video's van de vlucht?",
+        "answer": "Ja, met het mediapakket (vanaf €170) ontvang je professionele GoPro-opnames – foto's en HD-video op een 4GB SD-kaart, direct na de landing. Bij het Classic-pakket zijn opnames optioneel bij te boeken."
       },
       {
         "question": "Hoe veilig is tandem paragliden?",
-        "answer": "Tandemvluchten worden uitsluitend uitgevoerd door gecertificeerde piloten met gecertificeerde uitrusting. Of we vliegen hangt altijd af van de actuele weersomstandigheden."
+        "answer": "Tandemvluchten bij KOFLY worden uitsluitend uitgevoerd door staatsgecertificeerde piloten met gecertificeerde EN/LTF-uitrusting. Daniel Kofler vliegt sinds 1999 en heeft meer dan 5.000 vlieguren. Of we vliegen hangt altijd af van de actuele weersomstandigheden."
       },
       {
         "question": "Kan ik vliegen als ik hoogtevrees heb?",
-        "answer": "Veel passagiers hebben aanvankelijk respect voor de hoogte. De meesten vertellen dat vliegen anders voelt dan op een berg staan – meer als zweven."
+        "answer": "Ja! Veel van onze passagiers zijn aanvankelijk nerveus over de hoogte. De meesten vertellen dat paragliden totaal anders voelt dan op een berg staan – meer als zacht zweven. De piloot kan de vliegervaring op elk moment aanpassen aan jouw comfortniveau."
+      },
+      {
+        "question": "Zijn er cadeaubonnen beschikbaar?",
+        "answer": "Ja, alle vliegpakketten zijn beschikbaar als cadeaubon – een perfect cadeau voor verjaardagen, Kerstmis of speciale gelegenheden. Je kunt de bon bij ons ophalen of per post ontvangen. Neem gewoon contact op via WhatsApp of telefoon."
       }
     ]
   },

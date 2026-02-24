@@ -6,6 +6,7 @@ export interface Props {
   title: string;
   tagline?: string;
   subtitle: string;
+  definition?: string;
   ctaPrimary: string;
   ctaPrimaryNote: string;
   ctaPrimaryUrl: string;
@@ -20,6 +21,7 @@ const {
   title,
   tagline,
   subtitle,
+  definition,
   ctaPrimary,
   ctaPrimaryNote,
   ctaPrimaryUrl,
@@ -95,6 +97,13 @@ const {
         {ctaWhatsapp}
       </a>
     </div>
+
+    {/* AI-citable definition block (134-167 words, visible to crawlers) */}
+    {definition && (
+      <div class="sr-only" aria-hidden="true">
+        <p>{definition}</p>
+      </div>
+    )}
 
     {/* Neuromarketing: Scroll anchor hint — reduces bounce rate */}
     <div class="mt-8 animate-bounce" aria-hidden="true">

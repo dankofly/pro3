@@ -20,6 +20,7 @@
     "title": "Tandem Paragliding in the Airpark Lienzer Dolomiten",
     "tagline": "Tandem Paragliding with KOFLY – Come fly with us!",
     "subtitle": "Launch from Zettersfeld at 2,220m or Hochstein and soar 20–30 minutes over the Drau Valley. Certified tandem pilots, 5.0/5 stars from 284 reviews. From €150.",
+    "definition": "A tandem paragliding flight means flying in tandem with a certified pilot – you sit in a harness in front and soar 20 to 30 minutes over the Lienz valley and the Dolomites, with no experience required. KOFLY, operated by Daniel Kofler (paragliding pilot since 1999, over 5,000 flight hours), launches from Zettersfeld at 2,220 metres or Hochstein at 2,057 metres in the Airpark Lienz Dolomites. Landing is a gentle touch-down in the valley near Nussdorf-Debant. Four packages are available: Classic (€150), Classic with media (€170), Premium (€190) and XXL thermal flights from €250 with over an hour of flight time. With 284 reviews and a 5.0-star rating on Google and TripAdvisor, KOFLY is one of the top-rated tandem paragliding providers in East Tyrol. All flights are also available as gift vouchers.",
     "ctaPrimary": "Check availability",
     "ctaPrimaryNote": "on gleitschirm-tandemflug.com",
     "ctaWhatsapp": "WhatsApp",
@@ -112,6 +113,15 @@
       }
     ]
   },
+  "pilot": {
+    "sectionTitle": "Your Pilot",
+    "name": "Daniel Kofler",
+    "credentials": "Certified tandem pilot · Speedflying pioneer · 5,000+ flight hours",
+    "bio": "Daniel has been flying paragliders since 1999 and has been a tandem pilot in the Airpark Lienz Dolomites since 2007. As one of Austria's first speedflying pilots and a former test pilot for Swing Paragliders, he knows every air current above the Lienz valley. His goal: to give you a safe, unforgettable flight experience – backed by over 5,000 hours in the air.",
+    "experience": "Pilot since 1999",
+    "flights": "5,000+ flight hours",
+    "rating": "5.0/5 stars"
+  },
   "safety": {
     "sectionTitle": "Weather, safety & what to bring",
     "weather": {
@@ -141,40 +151,44 @@
     "sectionTitle": "Frequently asked questions",
     "items": [
       {
-        "question": "How long does the flight last?",
-        "answer": "Usually ~20–30 minutes. The exact duration depends on thermal conditions and weather."
+        "question": "How long does a tandem flight in Lienz last?",
+        "answer": "A tandem flight with KOFLY typically lasts 20 to 30 minutes. The exact duration depends on thermal conditions and wind. With the XXL thermal package, flights of over one hour are possible."
       },
       {
-        "question": "Do I need any experience?",
-        "answer": "No. You fly with a certified tandem pilot who handles all the controls. You just need to take a few running steps at launch."
+        "question": "Do I need experience for paragliding?",
+        "answer": "No experience is needed at all. You fly with a certified tandem pilot who handles all the controls. You just need to take a few running steps downhill at launch – the pilot does the rest."
       },
       {
-        "question": "What should I wear?",
-        "answer": "Sturdy shoes (hiking boots ideal), long trousers, jacket. It can be noticeably cooler up high than in the valley."
+        "question": "What should I wear for a tandem flight?",
+        "answer": "Sturdy shoes (hiking boots ideal, no sandals), long trousers and a jacket or fleece. At 2,220m on the Zettersfeld it's noticeably cooler than in the valley. We also recommend sunglasses and sun protection."
       },
       {
-        "question": "Can children fly?",
-        "answer": "Generally yes. They need to be able to understand and follow the pilot's instructions."
+        "question": "From what age can children do a tandem flight?",
+        "answer": "There is no fixed minimum age. What matters is that the child can understand the pilot's instructions and run a few steps independently at launch. In our experience, this works well from about age 5–6."
       },
       {
-        "question": "What if the weather is bad?",
-        "answer": "Safety comes first. If conditions aren't right, we reschedule. That's why we contact you beforehand to find the best time."
+        "question": "What happens in bad weather?",
+        "answer": "Safety always comes first. If weather conditions aren't suitable, we reschedule your flight free of charge to the next available date. That's why we contact you beforehand to find the optimal time together."
       },
       {
-        "question": "Where do we meet?",
-        "answer": "We arrange the exact meeting point based on weather and launch site. We usually meet near the valley station or at the landing zones."
+        "question": "Where is the meeting point for the tandem flight?",
+        "answer": "We arrange the exact meeting point based on weather and the chosen launch site (Zettersfeld or Hochstein). We usually meet near the valley station or at our landing zones near Nussdorf-Debant."
       },
       {
-        "question": "Are photos and videos available?",
-        "answer": "Yes, photo and video recordings of your flight are possible. We'll discuss details when you book."
+        "question": "Are photos and videos of the flight available?",
+        "answer": "Yes, with the media package (from €170) you receive professional GoPro footage – photos and HD video on a 4GB SD card, right after landing. With the Classic package, recordings can be added optionally."
       },
       {
         "question": "How safe is tandem paragliding?",
-        "answer": "Tandem flights are only conducted by certified pilots with certified equipment. Whether we fly always depends on current weather conditions."
+        "answer": "Tandem flights with KOFLY are conducted exclusively by state-certified pilots with certified EN/LTF equipment. Daniel Kofler has been flying since 1999 with over 5,000 flight hours. Whether we fly always depends on current weather conditions."
       },
       {
         "question": "Can I fly if I'm afraid of heights?",
-        "answer": "Many passengers initially have some respect for heights. Most report that flying feels different from standing on a mountain – more like floating."
+        "answer": "Yes! Many of our passengers are initially nervous about heights. Most report that paragliding feels completely different from standing on a mountain – more like gentle floating. The pilot can adjust the flight experience to your comfort level at any time."
+      },
+      {
+        "question": "Are gift vouchers available?",
+        "answer": "Yes, all flight packages are available as gift vouchers – a perfect present for birthdays, Christmas or special occasions. You can pick up the voucher from us or receive it by post. Just contact us via WhatsApp or phone."
       }
     ]
   },

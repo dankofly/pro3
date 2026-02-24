@@ -2,7 +2,7 @@
 import { siteConfig } from '~/config/site';
 
 export interface Props {
-  type: 'LocalBusiness' | 'FAQPage' | 'TouristAttraction' | 'Service';
+  type: 'LocalBusiness' | 'FAQPage' | 'TouristAttraction' | 'Service' | 'Person';
   locale?: string;
   faqItems?: Array<{ question: string; answer: string }>;
 }
@@ -197,11 +197,37 @@ function buildServiceSchema() {
   };
 }
 
+function buildPersonSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${siteConfig.site.url}/#daniel-kofler`,
+    name: 'Daniel Kofler',
+    jobTitle: 'Staatlich geprüfter Tandempilot & Speedflying-Pionier',
+    description:
+      'Daniel Kofler ist Gleitschirmpilot seit 1999 und Tandempilot seit 2007 mit über 5.000 Flugstunden. Als Pionier des Speedflying und ehemaliger Testpilot bei Swing Paragliders verbindet er technische Expertise mit regionaler Verwurzelung in Osttirol.',
+    worksFor: { '@id': `${siteConfig.site.url}/#business` },
+    knowsAbout: ['Tandem Paragliding', 'Speedflying', 'Paragliding Photography', 'Alpine Flying'],
+    sameAs: [
+      'https://www.linkedin.com/in/daniel-kofler-12721546/',
+      'https://www.osttirol-heute.at/menschen/daniel-kofler-ein-grenzgaenger-der-luefte-aus-osttirol/',
+      'https://www.klassikmagazine.com/daniel-kofler-professional-paraglider-photographer-interview-lienz-tyrol-austria/',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Assling',
+      addressRegion: 'Osttirol',
+      addressCountry: 'AT',
+    },
+  };
+}
+
 const schemaMap: Record<string, () => Record<string, unknown>> = {
   LocalBusiness: buildLocalBusinessSchema,
   FAQPage: buildFAQSchema,
   TouristAttraction: buildTouristAttractionSchema,
   Service: buildServiceSchema,
+  Person: buildPersonSchema,
 };
 
 const schema = (schemaMap[type] || buildLocalBusinessSchema)();

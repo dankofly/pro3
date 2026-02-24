@@ -9,6 +9,7 @@ import FAQSection from '~/components/landing/FAQSection.astro';
 import ContactCTA from '~/components/landing/ContactCTA.astro';
 import PricingSection from '~/components/landing/PricingSection.astro';
 import SocialProofSection from '~/components/landing/SocialProofSection.astro';
+import PilotSection from '~/components/landing/PilotSection.astro';
 
 import { t } from '~/i18n/utils';
 import { buildMainSiteUrl, siteConfig } from '~/config/site';
@@ -29,6 +30,7 @@ const sectionImages = await loadSectionImages();
     title={dict.hero.title}
     tagline={dict.hero.tagline}
     subtitle={dict.hero.subtitle}
+    definition={dict.hero.definition}
     ctaPrimary={dict.hero.ctaPrimary}
     ctaPrimaryNote={dict.hero.ctaPrimaryNote}
     ctaPrimaryUrl={ctaUrl}
@@ -71,6 +73,16 @@ const sectionImages = await loadSectionImages();
     regions={dict.regions.items}
     ctaLabel={dict.regions.routeLabel}
     ctaUrl={siteConfig.mapsUrl}
+  />
+
+  <PilotSection
+    sectionTitle={dict.pilot.sectionTitle}
+    name={dict.pilot.name}
+    credentials={dict.pilot.credentials}
+    bio={dict.pilot.bio}
+    experience={dict.pilot.experience}
+    flights={dict.pilot.flights}
+    rating={dict.pilot.rating}
   />
 
   <SafetySection
