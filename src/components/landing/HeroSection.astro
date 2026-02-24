@@ -13,6 +13,7 @@ export interface Props {
   whatsappUrl: string;
   trustLine: string;
   backgroundImage?: ImageMetadata;
+  backgroundImageMobile?: ImageMetadata;
 }
 
 const {
@@ -26,12 +27,13 @@ const {
   whatsappUrl,
   trustLine,
   backgroundImage,
+  backgroundImageMobile,
 } = Astro.props;
 ---
 
 <section class:list={["relative min-h-[85vh] flex items-center justify-center overflow-hidden", backgroundImage ? "" : "bg-gradient-to-b from-white via-stone-50 to-stone-100 dark:from-[#060a18] dark:via-[#0a0f1a] dark:to-[#0f1629]"]}>
   {backgroundImage && (
-    <SectionBackground src={backgroundImage} alt="Tandemflug Paragliding" loading="eager" />
+    <SectionBackground src={backgroundImage} mobileSrc={backgroundImageMobile} alt="Tandemflug Paragliding" loading="eager" />
   )}
   {!backgroundImage && (
     <div class="absolute inset-0 overflow-hidden">

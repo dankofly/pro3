@@ -22,6 +22,12 @@ collections:
             required: false
             allow_multiple: false
             hint: '📐 1920×1080px | JPG/PNG (→ WebP) | Querformat, Berg/Himmel/Flug'
+          - label: 'Hero Hintergrund (Mobil, Hochformat)'
+            name: 'heroMobile'
+            widget: 'image'
+            required: false
+            allow_multiple: false
+            hint: '📐 1080×1920px (9:16) | JPG/PNG (→ WebP) | Hochformat für Smartphones'
           - label: 'Startplätze Hintergrund'
             name: 'launchSites'
             widget: 'image'

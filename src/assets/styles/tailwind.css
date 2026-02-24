@@ -103,9 +103,11 @@
            dark:bg-white/[0.04] dark:backdrop-blur-md dark:border-white/[0.08] dark:shadow-none;
   }
 
-  .glass-card-hover:hover {
-    @apply shadow-md border-orange-300/40 -translate-y-1
-           dark:bg-white/[0.07] dark:border-sky-400/20 dark:shadow-lg dark:shadow-sky-500/[0.05];
+  @media (hover: hover) {
+    .glass-card-hover:hover {
+      @apply shadow-md border-orange-300/40 -translate-y-1
+             dark:bg-white/[0.07] dark:border-sky-400/20 dark:shadow-lg dark:shadow-sky-500/[0.05];
+    }
   }
 
   .glass-card-highlight {
@@ -172,12 +174,14 @@
   width: 100%;
 }
 
-/* CTA button whimsy — lift + glow on hover */
+/* CTA button whimsy — lift + glow on hover (desktop only) */
 .btn-whimsy {
   transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.btn-whimsy:hover {
-  transform: translateY(-2px) scale(1.02);
+@media (hover: hover) {
+  .btn-whimsy:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
 }
 .btn-whimsy:active {
   transform: translateY(0) scale(0.98);
@@ -196,17 +200,10 @@
 .card-icon-bounce {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.group:hover .card-icon-bounce,
-.glass-card-hover:hover .card-icon-bounce {
-  transform: translateY(-2px) scale(1.1);
-}
 
 /* Arrow slide on hover */
 .arrow-slide {
   transition: transform 0.25s ease;
-}
-.group:hover .arrow-slide {
-  transform: translateX(4px);
 }
 
 /* Step badge pop */
@@ -345,6 +342,52 @@ details[open] summary ~ div {
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* === MOBILE TOUCH HAPTIK === */
+/* Active-state feedback on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .btn-whimsy:active,
+  .glass-card-hover:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
+
+  /* Scroll-snap for natural section-by-section scrolling */
+  html {
+    scroll-snap-type: y proximity;
+  }
+  section[id] {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+}
+
+/* Desktop-only hover effects for card icons and arrows */
+@media (hover: hover) {
+  .group:hover .card-icon-bounce,
+  .glass-card-hover:hover .card-icon-bounce {
+    transform: translateY(-2px) scale(1.1);
+  }
+  .group:hover .arrow-slide {
+    transform: translateX(4px);
+  }
+}
+@media (hover: none) {
+  .group:hover .card-icon-bounce,
+  .glass-card-hover:hover .card-icon-bounce,
+  .group:hover .arrow-slide {
+    transform: none;
+  }
+}
+
+/* Hide scrollbar for horizontal scroll containers */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 /* Reduced motion: disable ALL animations comprehensively */

@@ -39,10 +39,12 @@ const { locale, currentPath, ctaUrl, nav } = Astro.props;
         <a href="#faq" class="text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-sky-400 transition-colors nav-link-fancy">{nav.faq}</a>
       </nav>
 
-      {/* Right side: language switch + CTA */}
+      {/* Right side: language switch (desktop) + CTA */}
       <div class="flex items-center gap-3 sm:gap-4">
         <ToggleTheme iconClass="w-5 h-5" class="p-2 text-slate-400 dark:text-slate-500 hover:text-orange-500 dark:hover:text-sky-400 rounded-lg transition-colors" />
-        <LanguageSwitcher currentLocale={locale} currentPath={currentPath} />
+        <div class="hidden lg:block">
+          <LanguageSwitcher currentLocale={locale} currentPath={currentPath} />
+        </div>
         <a
           href={ctaUrl}
           target="_blank"
@@ -83,6 +85,9 @@ const { locale, currentPath, ctaUrl, nav } = Astro.props;
         >
           {nav.requestAvailability}
         </a>
+        <div class="pt-3 mt-3 border-t border-gray-200/60 dark:border-white/[0.06]">
+          <LanguageSwitcher currentLocale={locale} currentPath={currentPath} />
+        </div>
       </div>
     </nav>
   </div>

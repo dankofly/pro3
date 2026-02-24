@@ -4,6 +4,7 @@ import sectionImagesData from '~/data/section-images.json';
 
 export type SectionImageKey =
   | 'hero'
+  | 'heroMobile'
   | 'launchSites'
   | 'regions'
   | 'safety'
@@ -25,6 +26,7 @@ export async function loadSectionImages(): Promise<SectionImages> {
   const data = sectionImagesData as Record<string, string>;
   const keys: SectionImageKey[] = [
     'hero',
+    'heroMobile',
     'launchSites',
     'regions',
     'safety',

@@ -25,6 +25,7 @@ const sectionImages = await loadSectionImages();
 <LandingPageLayout locale={locale} currentPath="/nl/" dict={dict} ctaUrl={ctaUrl} whatsappUrl={whatsappUrl} faqItems={dict.faq.items}>
   <HeroSection
     backgroundImage={sectionImages.hero}
+    backgroundImageMobile={sectionImages.heroMobile}
     title={dict.hero.title}
     tagline={dict.hero.tagline}
     subtitle={dict.hero.subtitle}

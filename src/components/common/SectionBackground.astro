@@ -4,6 +4,7 @@ import type { ImageMetadata } from 'astro';
 
 export interface Props {
   src: ImageMetadata;
+  mobileSrc?: ImageMetadata;
   alt?: string;
   quality?: number;
   overlay?: boolean;
@@ -12,30 +13,37 @@ export interface Props {
 
 const {
   src,
+  mobileSrc,
   alt = '',
   quality = 80,
   overlay = true,
   loading = 'lazy',
 } = Astro.props;
 
-const optimized = await getImage({
-  src,
-  width: 1920,
-  format: 'webp',
-  quality,
-});
+const desktop = await getImage({ src, width: 1920, format: 'webp', quality });
+const mobile = mobileSrc
+  ? await getImage({ src: mobileSrc, width: 768, format: 'webp', quality })
+  : await getImage({ src, width: 768, format: 'webp', quality });
 ---
 
 <div class="absolute inset-0 -z-10 overflow-hidden">
-  <img
-    src={optimized.src}
-    width={optimized.attributes.width}
-    height={optimized.attributes.height}
-    alt={alt}
-    class="w-full h-full object-cover"
-    loading={loading}
-    decoding="async"
-  />
+  <picture>
+    <source
+      media="(max-width: 768px)"
+      srcset={mobile.src}
+      width={mobile.attributes.width}
+      height={mobile.attributes.height}
+    />
+    <img
+      src={desktop.src}
+      width={desktop.attributes.width}
+      height={desktop.attributes.height}
+      alt={alt}
+      class="w-full h-full object-cover"
+      loading={loading}
+      decoding="async"
+    />
+  </picture>
   {overlay && (
     <>
       <div class="absolute inset-0 dark:hidden" style="background: linear-gradient(to bottom, transparent 0%, transparent 66%, rgba(255,255,255,0.15) 82%, rgba(255,255,255,0.5) 90%, rgba(255,255,255,0.85) 96%, white 100%)" />
