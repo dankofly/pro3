@@ -2,34 +2,129 @@
 import { siteConfig } from '~/config/site';
 
 export interface Props {
-  type: 'LocalBusiness' | 'FAQPage';
+  type: 'LocalBusiness' | 'FAQPage' | 'TouristAttraction' | 'Service';
   locale?: string;
   faqItems?: Array<{ question: string; answer: string }>;
 }
 
 const { type, locale = 'de', faqItems = [] } = Astro.props;
 
+const localizedNames: Record<string, string> = {
+  de: 'Tandemflug Lienz – Paragliding über den Lienzer Dolomiten',
+  en: 'Tandem Paragliding Lienz – Fly over the Lienz Dolomites',
+  nl: 'Paragliding Tandemvlucht Lienz – Vlieg over de Lienzer Dolomieten',
+};
+
+const localizedDescriptions: Record<string, string> = {
+  de: 'Tandem-Paragliding im Airpark Lienzer Dolomiten, Osttirol. Starte vom Zettersfeld (2.220m) oder Hochstein (2.057m) und gleite 20–30 Minuten über das Drautal. Staatlich geprüfte Piloten, 5.0/5 Sterne auf Google und TripAdvisor. Ab €150.',
+  en: 'Tandem paragliding in the Airpark Lienz Dolomites, East Tyrol, Austria. Take off from Zettersfeld (2,220m) or Hochstein (2,057m) and soar 20–30 minutes over the Drau Valley. Certified pilots, 5.0/5 stars on Google and TripAdvisor. From €150.',
+  nl: 'Tandem paragliding in het Airpark Lienzer Dolomieten, Oost-Tirol, Oostenrijk. Vertrek vanaf Zettersfeld (2.220m) of Hochstein (2.057m) en zweef 20–30 minuten boven het Draudal. Gecertificeerde piloten, 5.0/5 sterren op Google en TripAdvisor. Vanaf €150.',
+};
+
 function buildLocalBusinessSchema() {
-  const schema: Record<string, unknown> = {
+  return {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': ['LocalBusiness', 'SportsActivityLocation'],
+    '@id': `${siteConfig.site.url}/#business`,
     name: siteConfig.legal.companyName,
+    alternateName: ['KOFLY', 'Tandemflug Lienz', 'Gleitschirm Tandemflug Lienz'],
+    description: localizedDescriptions[locale] || localizedDescriptions.de,
     url: siteConfig.site.url,
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
-  };
-
-  if (siteConfig.legal.address.street && !siteConfig.legal.address.street.startsWith('TODO')) {
-    schema.address = {
+    image: `${siteConfig.site.url}/images/og-tandemflug-lienz.jpg`,
+    logo: `${siteConfig.site.url}/favicon.svg`,
+    priceRange: '€150–€250',
+    currenciesAccepted: 'EUR',
+    paymentAccepted: 'Cash, Bank Transfer',
+    address: {
       '@type': 'PostalAddress',
       streetAddress: siteConfig.legal.address.street,
       postalCode: siteConfig.legal.address.zip,
       addressLocality: siteConfig.legal.address.city,
+      addressRegion: 'Osttirol',
       addressCountry: 'AT',
-    };
-  }
-
-  return schema;
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 46.8299,
+      longitude: 12.7694,
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Lienz' },
+      { '@type': 'AdministrativeArea', name: 'Osttirol' },
+      { '@type': 'AdministrativeArea', name: 'Oberkärnten' },
+      { '@type': 'AdministrativeArea', name: 'Drautal' },
+      { '@type': 'AdministrativeArea', name: 'Pustertal' },
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      bestRating: '5',
+      ratingCount: '284',
+      reviewCount: '284',
+    },
+    review: [
+      {
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        author: { '@type': 'Person', name: 'TripAdvisor Gast' },
+        reviewBody: 'Dieses wunderbare Erlebnis wurde von Anfang bis Ende sehr professionell und sehr freundlich auf unsere Bedürfnisse zugeschnitten.',
+      },
+    ],
+    sameAs: [
+      'https://gleitschirm-tandemflug.com',
+      siteConfig.social.instagram,
+      'https://www.tripadvisor.at/Attraction_Review-g230011-d8720066-Reviews-Gleitschirm_Tandemflug_com-Lienz_Tirol_Austrian_Alps.html',
+      'https://maps.app.goo.gl/ywpKPXwKkuotoU5BA',
+    ].filter(Boolean),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Tandemflug Pakete',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          name: 'Classic Flugpaket',
+          price: '150',
+          priceCurrency: 'EUR',
+          description: 'Tandemflug ~20–30 Min. im Airpark Lienzer Dolomiten',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Classic inkl. Media Paket',
+          price: '170',
+          priceCurrency: 'EUR',
+          description: 'Tandemflug ~20–30 Min. inkl. Foto/HD-Video + SD-Karte',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Premium Flugpaket',
+          price: '190',
+          priceCurrency: 'EUR',
+          description: 'Tandemflug mit extra Zeit & Erlebnis, inkl. Media',
+        },
+        {
+          '@type': 'Offer',
+          name: 'XXL Flugpaket (Thermik)',
+          price: '250',
+          priceCurrency: 'EUR',
+          description: 'Thermik- & Streckenflüge, Flugzeit 1h+, inkl. Media',
+        },
+      ],
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      description: 'Wetterabhängig, nach Vereinbarung',
+    },
+    founder: {
+      '@type': 'Person',
+      name: 'Daniel Kofler',
+      jobTitle: 'Tandempilot & Gründer',
+    },
+    foundingDate: '2015',
+    knowsLanguage: ['de', 'en', 'nl'],
+  };
 }
 
 function buildFAQSchema() {
@@ -47,7 +142,69 @@ function buildFAQSchema() {
   };
 }
 
-const schema = type === 'FAQPage' ? buildFAQSchema() : buildLocalBusinessSchema();
+function buildTouristAttractionSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TouristAttraction',
+    name: localizedNames[locale] || localizedNames.de,
+    description: localizedDescriptions[locale] || localizedDescriptions.de,
+    url: `${siteConfig.site.url}/${locale}/`,
+    touristType: ['Adventure Tourism', 'Outdoor Sports', 'Paragliding'],
+    isAccessibleForFree: false,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 46.8299,
+      longitude: 12.7694,
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Lienz',
+      addressRegion: 'Osttirol',
+      addressCountry: 'AT',
+    },
+    containedInPlace: {
+      '@type': 'Place',
+      name: 'Airpark Lienzer Dolomiten',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Lienz',
+        addressRegion: 'Tirol',
+        addressCountry: 'AT',
+      },
+    },
+  };
+}
+
+function buildServiceSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Tandem Paragliding',
+    serviceType: 'Tandem Paragliding Flight',
+    provider: { '@id': `${siteConfig.site.url}/#business` },
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'Osttirol & Oberkärnten',
+    },
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: '150',
+      highPrice: '250',
+      priceCurrency: 'EUR',
+      offerCount: '4',
+    },
+    description: localizedDescriptions[locale] || localizedDescriptions.de,
+  };
+}
+
+const schemaMap: Record<string, () => Record<string, unknown>> = {
+  LocalBusiness: buildLocalBusinessSchema,
+  FAQPage: buildFAQSchema,
+  TouristAttraction: buildTouristAttractionSchema,
+  Service: buildServiceSchema,
+};
+
+const schema = (schemaMap[type] || buildLocalBusinessSchema)();
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(schema)} />

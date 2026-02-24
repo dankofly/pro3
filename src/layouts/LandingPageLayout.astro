@@ -72,6 +72,8 @@ const { locale, currentPath, dict, ctaUrl, whatsappUrl, faqItems } = Astro.props
     />
 
     <JsonLd type="LocalBusiness" locale={locale} />
+    <JsonLd type="TouristAttraction" locale={locale} />
+    <JsonLd type="Service" locale={locale} />
     {faqItems && faqItems.length > 0 && (
       <JsonLd type="FAQPage" locale={locale} faqItems={faqItems} />
     )}
