@@ -47,6 +47,9 @@ const { locale, currentPath, dict, ctaUrl, whatsappUrl, faqItems } = Astro.props
   </head>
 
   <body class="antialiased text-slate-600 dark:text-slate-300 bg-white dark:bg-alpine-800 tracking-tight font-sans">
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
     <LandingHeader
       locale={locale}
       currentPath={currentPath}
@@ -54,7 +57,7 @@ const { locale, currentPath, dict, ctaUrl, whatsappUrl, faqItems } = Astro.props
       nav={dict.nav}
     />
 
-    <main>
+    <main id="main-content">
       <slot />
     </main>
 
@@ -80,6 +83,49 @@ const { locale, currentPath, dict, ctaUrl, whatsappUrl, faqItems } = Astro.props
     )}
 
     <BasicScripts />
+
+    <script is:inline>
+      // Scroll progress bar + active nav section tracking
+      (function() {
+        var bar = document.getElementById('scroll-progress');
+        var sections = document.querySelectorAll('section[id]');
+        var navLinks = document.querySelectorAll('.nav-link-fancy');
+        var ticking = false;
+
+        function onScroll() {
+          if (!ticking) {
+            requestAnimationFrame(function() {
+              // Progress bar
+              if (bar) {
+                var h = document.documentElement.scrollHeight - window.innerHeight;
+                var pct = h > 0 ? (window.scrollY / h) * 100 : 0;
+                bar.style.width = pct + '%';
+              }
+              // Active nav section
+              var current = '';
+              for (var i = 0; i < sections.length; i++) {
+                var rect = sections[i].getBoundingClientRect();
+                if (rect.top <= 120) current = sections[i].id;
+              }
+              for (var j = 0; j < navLinks.length; j++) {
+                var href = navLinks[j].getAttribute('href');
+                if (href === '#' + current) {
+                  navLinks[j].classList.add('active');
+                } else {
+                  navLinks[j].classList.remove('active');
+                }
+              }
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
+
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script is:inline>
       if (window.netlifyIdentity) {

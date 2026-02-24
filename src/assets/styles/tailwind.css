@@ -275,6 +275,71 @@ details[open] summary ~ div {
   z-index: 10;
 }
 
+/* === NEUROMARKETING: SCROLL PROGRESS BAR === */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f97316, #ef4444);
+  z-index: 100;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+.dark .scroll-progress {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+}
+
+/* === NEUROMARKETING: URGENCY BADGE === */
+@keyframes urgency-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.urgency-badge {
+  animation: urgency-pulse 2s ease-in-out 3;
+}
+
+/* === NEUROMARKETING: CTA SOFT GLOW === */
+@keyframes cta-soft-glow {
+  0%, 100% { box-shadow: 0 4px 15px var(--pulse-color, rgba(249, 115, 22, 0.25)); }
+  50% { box-shadow: 0 4px 25px var(--pulse-color, rgba(249, 115, 22, 0.45)), 0 0 0 4px var(--pulse-color, rgba(249, 115, 22, 0)); }
+}
+.animate-pulse-soft {
+  animation: cta-soft-glow 3s ease-in-out 3;
+}
+.dark .animate-pulse-soft {
+  --pulse-color: rgba(56, 189, 248, 0.35);
+}
+
+/* === SKIP TO CONTENT (Accessibility) === */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #f97316;
+  color: white;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: top 0.2s;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* === ACTIVE NAV SECTION HIGHLIGHT === */
+.nav-link-fancy.active::after {
+  width: 100%;
+}
+.nav-link-fancy.active {
+  color: #f97316;
+}
+.dark .nav-link-fancy.active {
+  color: #38bdf8;
+}
+
 /* Smooth scroll */
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -282,17 +347,15 @@ details[open] summary ~ div {
   }
 }
 
-/* Reduced motion: disable animations */
+/* Reduced motion: disable ALL animations comprehensively */
 @media (prefers-reduced-motion: reduce) {
-  .btn-whimsy:hover,
-  .btn-whimsy:active {
-    transform: none;
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-  .glass-card-hover:hover {
-    transform: none !important;
-  }
-  .card-icon-bounce,
-  .step-badge:hover {
-    transform: none !important;
+  .scroll-progress {
+    display: none;
   }
 }
