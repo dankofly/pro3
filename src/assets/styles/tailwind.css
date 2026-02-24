@@ -142,13 +142,13 @@
   100% { opacity: 1; transform: scale(1.15); }
 }
 
-@keyframes gradient-x {
+@keyframes hero-shimmer {
   0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
-.animate-gradient-x {
-  animation: gradient-x 4s ease infinite;
+.hero-title-shimmer {
+  background-size: 200% auto;
+  animation: hero-shimmer 1.2s ease-out 2s 1 both;
 }
 
 /* === WHIMSY: MICRO-INTERACTIONS === */
