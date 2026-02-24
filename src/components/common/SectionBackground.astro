@@ -37,6 +37,9 @@ const optimized = await getImage({
     decoding="async"
   />
   {overlay && (
-    <div class="absolute inset-0 bg-gradient-to-b from-white/60 via-white/50 to-white/70 dark:from-[#060a18]/70 dark:via-[#0a0f1a]/55 dark:to-[#0f1629]/75" />
+    <>
+      <div class="absolute inset-0 dark:hidden" style="background: linear-gradient(to bottom, transparent 0%, transparent 66%, rgba(255,255,255,0.15) 82%, rgba(255,255,255,0.5) 90%, rgba(255,255,255,0.85) 96%, white 100%)" />
+      <div class="absolute inset-0 hidden dark:block" style="background: linear-gradient(to bottom, transparent 0%, transparent 66%, rgba(10,15,26,0.15) 82%, rgba(10,15,26,0.5) 90%, rgba(10,15,26,0.85) 96%, rgb(10,15,26) 100%)" />
+    </>
   )}
 </div>
